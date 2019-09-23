@@ -224,6 +224,18 @@ class KeyValue : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::int64 lease() const;
   void set_lease(::google::protobuf::int64 value);
 
+  // int32 force_find_depth = 102;
+  void clear_force_find_depth();
+  static const int kForceFindDepthFieldNumber = 102;
+  ::google::protobuf::int32 force_find_depth() const;
+  void set_force_find_depth(::google::protobuf::int32 value);
+
+  // int64 prototype_idx = 101;
+  void clear_prototype_idx();
+  static const int kPrototypeIdxFieldNumber = 101;
+  ::google::protobuf::int64 prototype_idx() const;
+  void set_prototype_idx(::google::protobuf::int64 value);
+
   // @@protoc_insertion_point(class_scope:mvccpb.KeyValue)
  private:
 
@@ -234,6 +246,8 @@ class KeyValue : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::int64 mod_revision_;
   ::google::protobuf::int64 version_;
   ::google::protobuf::int64 lease_;
+  ::google::protobuf::int32 force_find_depth_;
+  ::google::protobuf::int64 prototype_idx_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   friend struct ::protobuf_kv_2eproto::TableStruct;
 };
@@ -563,6 +577,34 @@ inline void KeyValue::set_lease(::google::protobuf::int64 value) {
   
   lease_ = value;
   // @@protoc_insertion_point(field_set:mvccpb.KeyValue.lease)
+}
+
+// int64 prototype_idx = 101;
+inline void KeyValue::clear_prototype_idx() {
+  prototype_idx_ = GOOGLE_LONGLONG(0);
+}
+inline ::google::protobuf::int64 KeyValue::prototype_idx() const {
+  // @@protoc_insertion_point(field_get:mvccpb.KeyValue.prototype_idx)
+  return prototype_idx_;
+}
+inline void KeyValue::set_prototype_idx(::google::protobuf::int64 value) {
+  
+  prototype_idx_ = value;
+  // @@protoc_insertion_point(field_set:mvccpb.KeyValue.prototype_idx)
+}
+
+// int32 force_find_depth = 102;
+inline void KeyValue::clear_force_find_depth() {
+  force_find_depth_ = 0;
+}
+inline ::google::protobuf::int32 KeyValue::force_find_depth() const {
+  // @@protoc_insertion_point(field_get:mvccpb.KeyValue.force_find_depth)
+  return force_find_depth_;
+}
+inline void KeyValue::set_force_find_depth(::google::protobuf::int32 value) {
+  
+  force_find_depth_ = value;
+  // @@protoc_insertion_point(field_set:mvccpb.KeyValue.force_find_depth)
 }
 
 // -------------------------------------------------------------------

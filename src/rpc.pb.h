@@ -41,7 +41,7 @@ namespace protobuf_rpc_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[85];
+  static const ::google::protobuf::internal::ParseTable schema[95];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -70,6 +70,24 @@ extern AuthEnableRequestDefaultTypeInternal _AuthEnableRequest_default_instance_
 class AuthEnableResponse;
 class AuthEnableResponseDefaultTypeInternal;
 extern AuthEnableResponseDefaultTypeInternal _AuthEnableResponse_default_instance_;
+class AuthPrototypeDeleteRequest;
+class AuthPrototypeDeleteRequestDefaultTypeInternal;
+extern AuthPrototypeDeleteRequestDefaultTypeInternal _AuthPrototypeDeleteRequest_default_instance_;
+class AuthPrototypeDeleteResponse;
+class AuthPrototypeDeleteResponseDefaultTypeInternal;
+extern AuthPrototypeDeleteResponseDefaultTypeInternal _AuthPrototypeDeleteResponse_default_instance_;
+class AuthPrototypeListRequest;
+class AuthPrototypeListRequestDefaultTypeInternal;
+extern AuthPrototypeListRequestDefaultTypeInternal _AuthPrototypeListRequest_default_instance_;
+class AuthPrototypeListResponse;
+class AuthPrototypeListResponseDefaultTypeInternal;
+extern AuthPrototypeListResponseDefaultTypeInternal _AuthPrototypeListResponse_default_instance_;
+class AuthPrototypeUpdateRequest;
+class AuthPrototypeUpdateRequestDefaultTypeInternal;
+extern AuthPrototypeUpdateRequestDefaultTypeInternal _AuthPrototypeUpdateRequest_default_instance_;
+class AuthPrototypeUpdateResponse;
+class AuthPrototypeUpdateResponseDefaultTypeInternal;
+extern AuthPrototypeUpdateResponseDefaultTypeInternal _AuthPrototypeUpdateResponse_default_instance_;
 class AuthRoleAddRequest;
 class AuthRoleAddRequestDefaultTypeInternal;
 extern AuthRoleAddRequestDefaultTypeInternal _AuthRoleAddRequest_default_instance_;
@@ -136,6 +154,12 @@ extern AuthUserGrantRoleRequestDefaultTypeInternal _AuthUserGrantRoleRequest_def
 class AuthUserGrantRoleResponse;
 class AuthUserGrantRoleResponseDefaultTypeInternal;
 extern AuthUserGrantRoleResponseDefaultTypeInternal _AuthUserGrantRoleResponse_default_instance_;
+class AuthUserListAclRequest;
+class AuthUserListAclRequestDefaultTypeInternal;
+extern AuthUserListAclRequestDefaultTypeInternal _AuthUserListAclRequest_default_instance_;
+class AuthUserListAclResponse;
+class AuthUserListAclResponseDefaultTypeInternal;
+extern AuthUserListAclResponseDefaultTypeInternal _AuthUserListAclResponse_default_instance_;
 class AuthUserListRequest;
 class AuthUserListRequestDefaultTypeInternal;
 extern AuthUserListRequestDefaultTypeInternal _AuthUserListRequest_default_instance_;
@@ -148,6 +172,12 @@ extern AuthUserRevokeRoleRequestDefaultTypeInternal _AuthUserRevokeRoleRequest_d
 class AuthUserRevokeRoleResponse;
 class AuthUserRevokeRoleResponseDefaultTypeInternal;
 extern AuthUserRevokeRoleResponseDefaultTypeInternal _AuthUserRevokeRoleResponse_default_instance_;
+class AuthUserUpdateAclRequest;
+class AuthUserUpdateAclRequestDefaultTypeInternal;
+extern AuthUserUpdateAclRequestDefaultTypeInternal _AuthUserUpdateAclRequest_default_instance_;
+class AuthUserUpdateAclResponse;
+class AuthUserUpdateAclResponseDefaultTypeInternal;
+extern AuthUserUpdateAclResponseDefaultTypeInternal _AuthUserUpdateAclResponse_default_instance_;
 class AuthenticateRequest;
 class AuthenticateRequestDefaultTypeInternal;
 extern AuthenticateRequestDefaultTypeInternal _AuthenticateRequest_default_instance_;
@@ -314,6 +344,12 @@ template<> ::etcdserverpb::AuthDisableRequest* Arena::CreateMaybeMessage<::etcds
 template<> ::etcdserverpb::AuthDisableResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthDisableResponse>(Arena*);
 template<> ::etcdserverpb::AuthEnableRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthEnableRequest>(Arena*);
 template<> ::etcdserverpb::AuthEnableResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthEnableResponse>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeDeleteRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeDeleteRequest>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeDeleteResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeDeleteResponse>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeListRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeListRequest>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeListResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeListResponse>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeUpdateRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeUpdateRequest>(Arena*);
+template<> ::etcdserverpb::AuthPrototypeUpdateResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthPrototypeUpdateResponse>(Arena*);
 template<> ::etcdserverpb::AuthRoleAddRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthRoleAddRequest>(Arena*);
 template<> ::etcdserverpb::AuthRoleAddResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthRoleAddResponse>(Arena*);
 template<> ::etcdserverpb::AuthRoleDeleteRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthRoleDeleteRequest>(Arena*);
@@ -336,10 +372,14 @@ template<> ::etcdserverpb::AuthUserGetRequest* Arena::CreateMaybeMessage<::etcds
 template<> ::etcdserverpb::AuthUserGetResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserGetResponse>(Arena*);
 template<> ::etcdserverpb::AuthUserGrantRoleRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserGrantRoleRequest>(Arena*);
 template<> ::etcdserverpb::AuthUserGrantRoleResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserGrantRoleResponse>(Arena*);
+template<> ::etcdserverpb::AuthUserListAclRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserListAclRequest>(Arena*);
+template<> ::etcdserverpb::AuthUserListAclResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserListAclResponse>(Arena*);
 template<> ::etcdserverpb::AuthUserListRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserListRequest>(Arena*);
 template<> ::etcdserverpb::AuthUserListResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserListResponse>(Arena*);
 template<> ::etcdserverpb::AuthUserRevokeRoleRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserRevokeRoleRequest>(Arena*);
 template<> ::etcdserverpb::AuthUserRevokeRoleResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserRevokeRoleResponse>(Arena*);
+template<> ::etcdserverpb::AuthUserUpdateAclRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserUpdateAclRequest>(Arena*);
+template<> ::etcdserverpb::AuthUserUpdateAclResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthUserUpdateAclResponse>(Arena*);
 template<> ::etcdserverpb::AuthenticateRequest* Arena::CreateMaybeMessage<::etcdserverpb::AuthenticateRequest>(Arena*);
 template<> ::etcdserverpb::AuthenticateResponse* Arena::CreateMaybeMessage<::etcdserverpb::AuthenticateResponse>(Arena*);
 template<> ::etcdserverpb::CompactionRequest* Arena::CreateMaybeMessage<::etcdserverpb::CompactionRequest>(Arena*);
@@ -9237,6 +9277,557 @@ class AuthRoleRevokePermissionRequest : public ::google::protobuf::Message /* @@
 };
 // -------------------------------------------------------------------
 
+class AuthPrototypeUpdateRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeUpdateRequest) */ {
+ public:
+  AuthPrototypeUpdateRequest();
+  virtual ~AuthPrototypeUpdateRequest();
+
+  AuthPrototypeUpdateRequest(const AuthPrototypeUpdateRequest& from);
+
+  inline AuthPrototypeUpdateRequest& operator=(const AuthPrototypeUpdateRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeUpdateRequest(AuthPrototypeUpdateRequest&& from) noexcept
+    : AuthPrototypeUpdateRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeUpdateRequest& operator=(AuthPrototypeUpdateRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeUpdateRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeUpdateRequest* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeUpdateRequest*>(
+               &_AuthPrototypeUpdateRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    69;
+
+  void Swap(AuthPrototypeUpdateRequest* other);
+  friend void swap(AuthPrototypeUpdateRequest& a, AuthPrototypeUpdateRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeUpdateRequest* New() const final {
+    return CreateMaybeMessage<AuthPrototypeUpdateRequest>(NULL);
+  }
+
+  AuthPrototypeUpdateRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeUpdateRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeUpdateRequest& from);
+  void MergeFrom(const AuthPrototypeUpdateRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeUpdateRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .authpb.Prototype prototype = 1;
+  bool has_prototype() const;
+  void clear_prototype();
+  static const int kPrototypeFieldNumber = 1;
+  private:
+  const ::authpb::Prototype& _internal_prototype() const;
+  public:
+  const ::authpb::Prototype& prototype() const;
+  ::authpb::Prototype* release_prototype();
+  ::authpb::Prototype* mutable_prototype();
+  void set_allocated_prototype(::authpb::Prototype* prototype);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeUpdateRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::authpb::Prototype* prototype_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthPrototypeDeleteRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeDeleteRequest) */ {
+ public:
+  AuthPrototypeDeleteRequest();
+  virtual ~AuthPrototypeDeleteRequest();
+
+  AuthPrototypeDeleteRequest(const AuthPrototypeDeleteRequest& from);
+
+  inline AuthPrototypeDeleteRequest& operator=(const AuthPrototypeDeleteRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeDeleteRequest(AuthPrototypeDeleteRequest&& from) noexcept
+    : AuthPrototypeDeleteRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeDeleteRequest& operator=(AuthPrototypeDeleteRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeDeleteRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeDeleteRequest* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeDeleteRequest*>(
+               &_AuthPrototypeDeleteRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    70;
+
+  void Swap(AuthPrototypeDeleteRequest* other);
+  friend void swap(AuthPrototypeDeleteRequest& a, AuthPrototypeDeleteRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeDeleteRequest* New() const final {
+    return CreateMaybeMessage<AuthPrototypeDeleteRequest>(NULL);
+  }
+
+  AuthPrototypeDeleteRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeDeleteRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeDeleteRequest& from);
+  void MergeFrom(const AuthPrototypeDeleteRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeDeleteRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string name = 1;
+  void clear_name();
+  static const int kNameFieldNumber = 1;
+  const ::std::string& name() const;
+  void set_name(const ::std::string& value);
+  #if LANG_CXX11
+  void set_name(::std::string&& value);
+  #endif
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  ::std::string* mutable_name();
+  ::std::string* release_name();
+  void set_allocated_name(::std::string* name);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeDeleteRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr name_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthPrototypeListRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeListRequest) */ {
+ public:
+  AuthPrototypeListRequest();
+  virtual ~AuthPrototypeListRequest();
+
+  AuthPrototypeListRequest(const AuthPrototypeListRequest& from);
+
+  inline AuthPrototypeListRequest& operator=(const AuthPrototypeListRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeListRequest(AuthPrototypeListRequest&& from) noexcept
+    : AuthPrototypeListRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeListRequest& operator=(AuthPrototypeListRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeListRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeListRequest* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeListRequest*>(
+               &_AuthPrototypeListRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    71;
+
+  void Swap(AuthPrototypeListRequest* other);
+  friend void swap(AuthPrototypeListRequest& a, AuthPrototypeListRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeListRequest* New() const final {
+    return CreateMaybeMessage<AuthPrototypeListRequest>(NULL);
+  }
+
+  AuthPrototypeListRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeListRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeListRequest& from);
+  void MergeFrom(const AuthPrototypeListRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeListRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeListRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthUserListAclRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthUserListAclRequest) */ {
+ public:
+  AuthUserListAclRequest();
+  virtual ~AuthUserListAclRequest();
+
+  AuthUserListAclRequest(const AuthUserListAclRequest& from);
+
+  inline AuthUserListAclRequest& operator=(const AuthUserListAclRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthUserListAclRequest(AuthUserListAclRequest&& from) noexcept
+    : AuthUserListAclRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthUserListAclRequest& operator=(AuthUserListAclRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthUserListAclRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthUserListAclRequest* internal_default_instance() {
+    return reinterpret_cast<const AuthUserListAclRequest*>(
+               &_AuthUserListAclRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    72;
+
+  void Swap(AuthUserListAclRequest* other);
+  friend void swap(AuthUserListAclRequest& a, AuthUserListAclRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthUserListAclRequest* New() const final {
+    return CreateMaybeMessage<AuthUserListAclRequest>(NULL);
+  }
+
+  AuthUserListAclRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthUserListAclRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthUserListAclRequest& from);
+  void MergeFrom(const AuthUserListAclRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthUserListAclRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // string user = 1;
+  void clear_user();
+  static const int kUserFieldNumber = 1;
+  const ::std::string& user() const;
+  void set_user(const ::std::string& value);
+  #if LANG_CXX11
+  void set_user(::std::string&& value);
+  #endif
+  void set_user(const char* value);
+  void set_user(const char* value, size_t size);
+  ::std::string* mutable_user();
+  ::std::string* release_user();
+  void set_allocated_user(::std::string* user);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthUserListAclRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::ArenaStringPtr user_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthUserUpdateAclRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthUserUpdateAclRequest) */ {
+ public:
+  AuthUserUpdateAclRequest();
+  virtual ~AuthUserUpdateAclRequest();
+
+  AuthUserUpdateAclRequest(const AuthUserUpdateAclRequest& from);
+
+  inline AuthUserUpdateAclRequest& operator=(const AuthUserUpdateAclRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthUserUpdateAclRequest(AuthUserUpdateAclRequest&& from) noexcept
+    : AuthUserUpdateAclRequest() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthUserUpdateAclRequest& operator=(AuthUserUpdateAclRequest&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthUserUpdateAclRequest& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthUserUpdateAclRequest* internal_default_instance() {
+    return reinterpret_cast<const AuthUserUpdateAclRequest*>(
+               &_AuthUserUpdateAclRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    73;
+
+  void Swap(AuthUserUpdateAclRequest* other);
+  friend void swap(AuthUserUpdateAclRequest& a, AuthUserUpdateAclRequest& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthUserUpdateAclRequest* New() const final {
+    return CreateMaybeMessage<AuthUserUpdateAclRequest>(NULL);
+  }
+
+  AuthUserUpdateAclRequest* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthUserUpdateAclRequest>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthUserUpdateAclRequest& from);
+  void MergeFrom(const AuthUserUpdateAclRequest& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthUserUpdateAclRequest* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .authpb.AclEntry acl = 2;
+  int acl_size() const;
+  void clear_acl();
+  static const int kAclFieldNumber = 2;
+  ::authpb::AclEntry* mutable_acl(int index);
+  ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >*
+      mutable_acl();
+  const ::authpb::AclEntry& acl(int index) const;
+  ::authpb::AclEntry* add_acl();
+  const ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >&
+      acl() const;
+
+  // string user = 1;
+  void clear_user();
+  static const int kUserFieldNumber = 1;
+  const ::std::string& user() const;
+  void set_user(const ::std::string& value);
+  #if LANG_CXX11
+  void set_user(::std::string&& value);
+  #endif
+  void set_user(const char* value);
+  void set_user(const char* value, size_t size);
+  ::std::string* mutable_user();
+  ::std::string* release_user();
+  void set_allocated_user(::std::string* user);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthUserUpdateAclRequest)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry > acl_;
+  ::google::protobuf::internal::ArenaStringPtr user_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class AuthEnableResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthEnableResponse) */ {
  public:
   AuthEnableResponse();
@@ -9272,7 +9863,7 @@ class AuthEnableResponse : public ::google::protobuf::Message /* @@protoc_insert
                &_AuthEnableResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    74;
 
   void Swap(AuthEnableResponse* other);
   friend void swap(AuthEnableResponse& a, AuthEnableResponse& b) {
@@ -9381,7 +9972,7 @@ class AuthDisableResponse : public ::google::protobuf::Message /* @@protoc_inser
                &_AuthDisableResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    75;
 
   void Swap(AuthDisableResponse* other);
   friend void swap(AuthDisableResponse& a, AuthDisableResponse& b) {
@@ -9490,7 +10081,7 @@ class AuthenticateResponse : public ::google::protobuf::Message /* @@protoc_inse
                &_AuthenticateResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    76;
 
   void Swap(AuthenticateResponse* other);
   friend void swap(AuthenticateResponse& a, AuthenticateResponse& b) {
@@ -9614,7 +10205,7 @@ class AuthUserAddResponse : public ::google::protobuf::Message /* @@protoc_inser
                &_AuthUserAddResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    77;
 
   void Swap(AuthUserAddResponse* other);
   friend void swap(AuthUserAddResponse& a, AuthUserAddResponse& b) {
@@ -9723,7 +10314,7 @@ class AuthUserGetResponse : public ::google::protobuf::Message /* @@protoc_inser
                &_AuthUserGetResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    78;
 
   void Swap(AuthUserGetResponse* other);
   friend void swap(AuthUserGetResponse& a, AuthUserGetResponse& b) {
@@ -9855,7 +10446,7 @@ class AuthUserDeleteResponse : public ::google::protobuf::Message /* @@protoc_in
                &_AuthUserDeleteResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    79;
 
   void Swap(AuthUserDeleteResponse* other);
   friend void swap(AuthUserDeleteResponse& a, AuthUserDeleteResponse& b) {
@@ -9964,7 +10555,7 @@ class AuthUserChangePasswordResponse : public ::google::protobuf::Message /* @@p
                &_AuthUserChangePasswordResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    80;
 
   void Swap(AuthUserChangePasswordResponse* other);
   friend void swap(AuthUserChangePasswordResponse& a, AuthUserChangePasswordResponse& b) {
@@ -10073,7 +10664,7 @@ class AuthUserGrantRoleResponse : public ::google::protobuf::Message /* @@protoc
                &_AuthUserGrantRoleResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    81;
 
   void Swap(AuthUserGrantRoleResponse* other);
   friend void swap(AuthUserGrantRoleResponse& a, AuthUserGrantRoleResponse& b) {
@@ -10182,7 +10773,7 @@ class AuthUserRevokeRoleResponse : public ::google::protobuf::Message /* @@proto
                &_AuthUserRevokeRoleResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    82;
 
   void Swap(AuthUserRevokeRoleResponse* other);
   friend void swap(AuthUserRevokeRoleResponse& a, AuthUserRevokeRoleResponse& b) {
@@ -10291,7 +10882,7 @@ class AuthRoleAddResponse : public ::google::protobuf::Message /* @@protoc_inser
                &_AuthRoleAddResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    83;
 
   void Swap(AuthRoleAddResponse* other);
   friend void swap(AuthRoleAddResponse& a, AuthRoleAddResponse& b) {
@@ -10400,7 +10991,7 @@ class AuthRoleGetResponse : public ::google::protobuf::Message /* @@protoc_inser
                &_AuthRoleGetResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    79;
+    84;
 
   void Swap(AuthRoleGetResponse* other);
   friend void swap(AuthRoleGetResponse& a, AuthRoleGetResponse& b) {
@@ -10522,7 +11113,7 @@ class AuthRoleListResponse : public ::google::protobuf::Message /* @@protoc_inse
                &_AuthRoleListResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    85;
 
   void Swap(AuthRoleListResponse* other);
   friend void swap(AuthRoleListResponse& a, AuthRoleListResponse& b) {
@@ -10654,7 +11245,7 @@ class AuthUserListResponse : public ::google::protobuf::Message /* @@protoc_inse
                &_AuthUserListResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    86;
 
   void Swap(AuthUserListResponse* other);
   friend void swap(AuthUserListResponse& a, AuthUserListResponse& b) {
@@ -10786,7 +11377,7 @@ class AuthRoleDeleteResponse : public ::google::protobuf::Message /* @@protoc_in
                &_AuthRoleDeleteResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    87;
 
   void Swap(AuthRoleDeleteResponse* other);
   friend void swap(AuthRoleDeleteResponse& a, AuthRoleDeleteResponse& b) {
@@ -10895,7 +11486,7 @@ class AuthRoleGrantPermissionResponse : public ::google::protobuf::Message /* @@
                &_AuthRoleGrantPermissionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    88;
 
   void Swap(AuthRoleGrantPermissionResponse* other);
   friend void swap(AuthRoleGrantPermissionResponse& a, AuthRoleGrantPermissionResponse& b) {
@@ -11004,7 +11595,7 @@ class AuthRoleRevokePermissionResponse : public ::google::protobuf::Message /* @
                &_AuthRoleRevokePermissionResponse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    89;
 
   void Swap(AuthRoleRevokePermissionResponse* other);
   friend void swap(AuthRoleRevokePermissionResponse& a, AuthRoleRevokePermissionResponse& b) {
@@ -11069,6 +11660,577 @@ class AuthRoleRevokePermissionResponse : public ::google::protobuf::Message /* @
   void set_allocated_header(::etcdserverpb::ResponseHeader* header);
 
   // @@protoc_insertion_point(class_scope:etcdserverpb.AuthRoleRevokePermissionResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::etcdserverpb::ResponseHeader* header_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthPrototypeUpdateResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeUpdateResponse) */ {
+ public:
+  AuthPrototypeUpdateResponse();
+  virtual ~AuthPrototypeUpdateResponse();
+
+  AuthPrototypeUpdateResponse(const AuthPrototypeUpdateResponse& from);
+
+  inline AuthPrototypeUpdateResponse& operator=(const AuthPrototypeUpdateResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeUpdateResponse(AuthPrototypeUpdateResponse&& from) noexcept
+    : AuthPrototypeUpdateResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeUpdateResponse& operator=(AuthPrototypeUpdateResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeUpdateResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeUpdateResponse* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeUpdateResponse*>(
+               &_AuthPrototypeUpdateResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    90;
+
+  void Swap(AuthPrototypeUpdateResponse* other);
+  friend void swap(AuthPrototypeUpdateResponse& a, AuthPrototypeUpdateResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeUpdateResponse* New() const final {
+    return CreateMaybeMessage<AuthPrototypeUpdateResponse>(NULL);
+  }
+
+  AuthPrototypeUpdateResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeUpdateResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeUpdateResponse& from);
+  void MergeFrom(const AuthPrototypeUpdateResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeUpdateResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  bool has_header() const;
+  void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  private:
+  const ::etcdserverpb::ResponseHeader& _internal_header() const;
+  public:
+  const ::etcdserverpb::ResponseHeader& header() const;
+  ::etcdserverpb::ResponseHeader* release_header();
+  ::etcdserverpb::ResponseHeader* mutable_header();
+  void set_allocated_header(::etcdserverpb::ResponseHeader* header);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeUpdateResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::etcdserverpb::ResponseHeader* header_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthPrototypeDeleteResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeDeleteResponse) */ {
+ public:
+  AuthPrototypeDeleteResponse();
+  virtual ~AuthPrototypeDeleteResponse();
+
+  AuthPrototypeDeleteResponse(const AuthPrototypeDeleteResponse& from);
+
+  inline AuthPrototypeDeleteResponse& operator=(const AuthPrototypeDeleteResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeDeleteResponse(AuthPrototypeDeleteResponse&& from) noexcept
+    : AuthPrototypeDeleteResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeDeleteResponse& operator=(AuthPrototypeDeleteResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeDeleteResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeDeleteResponse* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeDeleteResponse*>(
+               &_AuthPrototypeDeleteResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    91;
+
+  void Swap(AuthPrototypeDeleteResponse* other);
+  friend void swap(AuthPrototypeDeleteResponse& a, AuthPrototypeDeleteResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeDeleteResponse* New() const final {
+    return CreateMaybeMessage<AuthPrototypeDeleteResponse>(NULL);
+  }
+
+  AuthPrototypeDeleteResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeDeleteResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeDeleteResponse& from);
+  void MergeFrom(const AuthPrototypeDeleteResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeDeleteResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  bool has_header() const;
+  void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  private:
+  const ::etcdserverpb::ResponseHeader& _internal_header() const;
+  public:
+  const ::etcdserverpb::ResponseHeader& header() const;
+  ::etcdserverpb::ResponseHeader* release_header();
+  ::etcdserverpb::ResponseHeader* mutable_header();
+  void set_allocated_header(::etcdserverpb::ResponseHeader* header);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeDeleteResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::etcdserverpb::ResponseHeader* header_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthPrototypeListResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthPrototypeListResponse) */ {
+ public:
+  AuthPrototypeListResponse();
+  virtual ~AuthPrototypeListResponse();
+
+  AuthPrototypeListResponse(const AuthPrototypeListResponse& from);
+
+  inline AuthPrototypeListResponse& operator=(const AuthPrototypeListResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthPrototypeListResponse(AuthPrototypeListResponse&& from) noexcept
+    : AuthPrototypeListResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthPrototypeListResponse& operator=(AuthPrototypeListResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthPrototypeListResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthPrototypeListResponse* internal_default_instance() {
+    return reinterpret_cast<const AuthPrototypeListResponse*>(
+               &_AuthPrototypeListResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    92;
+
+  void Swap(AuthPrototypeListResponse* other);
+  friend void swap(AuthPrototypeListResponse& a, AuthPrototypeListResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthPrototypeListResponse* New() const final {
+    return CreateMaybeMessage<AuthPrototypeListResponse>(NULL);
+  }
+
+  AuthPrototypeListResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthPrototypeListResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthPrototypeListResponse& from);
+  void MergeFrom(const AuthPrototypeListResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthPrototypeListResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .authpb.Prototype prototypes = 2;
+  int prototypes_size() const;
+  void clear_prototypes();
+  static const int kPrototypesFieldNumber = 2;
+  ::authpb::Prototype* mutable_prototypes(int index);
+  ::google::protobuf::RepeatedPtrField< ::authpb::Prototype >*
+      mutable_prototypes();
+  const ::authpb::Prototype& prototypes(int index) const;
+  ::authpb::Prototype* add_prototypes();
+  const ::google::protobuf::RepeatedPtrField< ::authpb::Prototype >&
+      prototypes() const;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  bool has_header() const;
+  void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  private:
+  const ::etcdserverpb::ResponseHeader& _internal_header() const;
+  public:
+  const ::etcdserverpb::ResponseHeader& header() const;
+  ::etcdserverpb::ResponseHeader* release_header();
+  ::etcdserverpb::ResponseHeader* mutable_header();
+  void set_allocated_header(::etcdserverpb::ResponseHeader* header);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthPrototypeListResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::authpb::Prototype > prototypes_;
+  ::etcdserverpb::ResponseHeader* header_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthUserListAclResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthUserListAclResponse) */ {
+ public:
+  AuthUserListAclResponse();
+  virtual ~AuthUserListAclResponse();
+
+  AuthUserListAclResponse(const AuthUserListAclResponse& from);
+
+  inline AuthUserListAclResponse& operator=(const AuthUserListAclResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthUserListAclResponse(AuthUserListAclResponse&& from) noexcept
+    : AuthUserListAclResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthUserListAclResponse& operator=(AuthUserListAclResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthUserListAclResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthUserListAclResponse* internal_default_instance() {
+    return reinterpret_cast<const AuthUserListAclResponse*>(
+               &_AuthUserListAclResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    93;
+
+  void Swap(AuthUserListAclResponse* other);
+  friend void swap(AuthUserListAclResponse& a, AuthUserListAclResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthUserListAclResponse* New() const final {
+    return CreateMaybeMessage<AuthUserListAclResponse>(NULL);
+  }
+
+  AuthUserListAclResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthUserListAclResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthUserListAclResponse& from);
+  void MergeFrom(const AuthUserListAclResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthUserListAclResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .authpb.AclEntry acl = 2;
+  int acl_size() const;
+  void clear_acl();
+  static const int kAclFieldNumber = 2;
+  ::authpb::AclEntry* mutable_acl(int index);
+  ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >*
+      mutable_acl();
+  const ::authpb::AclEntry& acl(int index) const;
+  ::authpb::AclEntry* add_acl();
+  const ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >&
+      acl() const;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  bool has_header() const;
+  void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  private:
+  const ::etcdserverpb::ResponseHeader& _internal_header() const;
+  public:
+  const ::etcdserverpb::ResponseHeader& header() const;
+  ::etcdserverpb::ResponseHeader* release_header();
+  ::etcdserverpb::ResponseHeader* mutable_header();
+  void set_allocated_header(::etcdserverpb::ResponseHeader* header);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthUserListAclResponse)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry > acl_;
+  ::etcdserverpb::ResponseHeader* header_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::protobuf_rpc_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
+class AuthUserUpdateAclResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:etcdserverpb.AuthUserUpdateAclResponse) */ {
+ public:
+  AuthUserUpdateAclResponse();
+  virtual ~AuthUserUpdateAclResponse();
+
+  AuthUserUpdateAclResponse(const AuthUserUpdateAclResponse& from);
+
+  inline AuthUserUpdateAclResponse& operator=(const AuthUserUpdateAclResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  AuthUserUpdateAclResponse(AuthUserUpdateAclResponse&& from) noexcept
+    : AuthUserUpdateAclResponse() {
+    *this = ::std::move(from);
+  }
+
+  inline AuthUserUpdateAclResponse& operator=(AuthUserUpdateAclResponse&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const AuthUserUpdateAclResponse& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const AuthUserUpdateAclResponse* internal_default_instance() {
+    return reinterpret_cast<const AuthUserUpdateAclResponse*>(
+               &_AuthUserUpdateAclResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    94;
+
+  void Swap(AuthUserUpdateAclResponse* other);
+  friend void swap(AuthUserUpdateAclResponse& a, AuthUserUpdateAclResponse& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline AuthUserUpdateAclResponse* New() const final {
+    return CreateMaybeMessage<AuthUserUpdateAclResponse>(NULL);
+  }
+
+  AuthUserUpdateAclResponse* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<AuthUserUpdateAclResponse>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const AuthUserUpdateAclResponse& from);
+  void MergeFrom(const AuthUserUpdateAclResponse& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(AuthUserUpdateAclResponse* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  bool has_header() const;
+  void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  private:
+  const ::etcdserverpb::ResponseHeader& _internal_header() const;
+  public:
+  const ::etcdserverpb::ResponseHeader& header() const;
+  ::etcdserverpb::ResponseHeader* release_header();
+  ::etcdserverpb::ResponseHeader* mutable_header();
+  void set_allocated_header(::etcdserverpb::ResponseHeader* header);
+
+  // @@protoc_insertion_point(class_scope:etcdserverpb.AuthUserUpdateAclResponse)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -16894,6 +18056,260 @@ inline void AuthRoleRevokePermissionRequest::set_allocated_range_end(::std::stri
 
 // -------------------------------------------------------------------
 
+// AuthPrototypeUpdateRequest
+
+// .authpb.Prototype prototype = 1;
+inline bool AuthPrototypeUpdateRequest::has_prototype() const {
+  return this != internal_default_instance() && prototype_ != NULL;
+}
+inline const ::authpb::Prototype& AuthPrototypeUpdateRequest::_internal_prototype() const {
+  return *prototype_;
+}
+inline const ::authpb::Prototype& AuthPrototypeUpdateRequest::prototype() const {
+  const ::authpb::Prototype* p = prototype_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeUpdateRequest.prototype)
+  return p != NULL ? *p : *reinterpret_cast<const ::authpb::Prototype*>(
+      &::authpb::_Prototype_default_instance_);
+}
+inline ::authpb::Prototype* AuthPrototypeUpdateRequest::release_prototype() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthPrototypeUpdateRequest.prototype)
+  
+  ::authpb::Prototype* temp = prototype_;
+  prototype_ = NULL;
+  return temp;
+}
+inline ::authpb::Prototype* AuthPrototypeUpdateRequest::mutable_prototype() {
+  
+  if (prototype_ == NULL) {
+    auto* p = CreateMaybeMessage<::authpb::Prototype>(GetArenaNoVirtual());
+    prototype_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeUpdateRequest.prototype)
+  return prototype_;
+}
+inline void AuthPrototypeUpdateRequest::set_allocated_prototype(::authpb::Prototype* prototype) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete reinterpret_cast< ::google::protobuf::MessageLite*>(prototype_);
+  }
+  if (prototype) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      prototype = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, prototype, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  prototype_ = prototype;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthPrototypeUpdateRequest.prototype)
+}
+
+// -------------------------------------------------------------------
+
+// AuthPrototypeDeleteRequest
+
+// string name = 1;
+inline void AuthPrototypeDeleteRequest::clear_name() {
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& AuthPrototypeDeleteRequest::name() const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeDeleteRequest.name)
+  return name_.GetNoArena();
+}
+inline void AuthPrototypeDeleteRequest::set_name(const ::std::string& value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:etcdserverpb.AuthPrototypeDeleteRequest.name)
+}
+#if LANG_CXX11
+inline void AuthPrototypeDeleteRequest::set_name(::std::string&& value) {
+  
+  name_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:etcdserverpb.AuthPrototypeDeleteRequest.name)
+}
+#endif
+inline void AuthPrototypeDeleteRequest::set_name(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:etcdserverpb.AuthPrototypeDeleteRequest.name)
+}
+inline void AuthPrototypeDeleteRequest::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:etcdserverpb.AuthPrototypeDeleteRequest.name)
+}
+inline ::std::string* AuthPrototypeDeleteRequest::mutable_name() {
+  
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeDeleteRequest.name)
+  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* AuthPrototypeDeleteRequest::release_name() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthPrototypeDeleteRequest.name)
+  
+  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void AuthPrototypeDeleteRequest::set_allocated_name(::std::string* name) {
+  if (name != NULL) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthPrototypeDeleteRequest.name)
+}
+
+// -------------------------------------------------------------------
+
+// AuthPrototypeListRequest
+
+// -------------------------------------------------------------------
+
+// AuthUserListAclRequest
+
+// string user = 1;
+inline void AuthUserListAclRequest::clear_user() {
+  user_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& AuthUserListAclRequest::user() const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserListAclRequest.user)
+  return user_.GetNoArena();
+}
+inline void AuthUserListAclRequest::set_user(const ::std::string& value) {
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:etcdserverpb.AuthUserListAclRequest.user)
+}
+#if LANG_CXX11
+inline void AuthUserListAclRequest::set_user(::std::string&& value) {
+  
+  user_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:etcdserverpb.AuthUserListAclRequest.user)
+}
+#endif
+inline void AuthUserListAclRequest::set_user(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:etcdserverpb.AuthUserListAclRequest.user)
+}
+inline void AuthUserListAclRequest::set_user(const char* value, size_t size) {
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:etcdserverpb.AuthUserListAclRequest.user)
+}
+inline ::std::string* AuthUserListAclRequest::mutable_user() {
+  
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserListAclRequest.user)
+  return user_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* AuthUserListAclRequest::release_user() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthUserListAclRequest.user)
+  
+  return user_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void AuthUserListAclRequest::set_allocated_user(::std::string* user) {
+  if (user != NULL) {
+    
+  } else {
+    
+  }
+  user_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), user);
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthUserListAclRequest.user)
+}
+
+// -------------------------------------------------------------------
+
+// AuthUserUpdateAclRequest
+
+// string user = 1;
+inline void AuthUserUpdateAclRequest::clear_user() {
+  user_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& AuthUserUpdateAclRequest::user() const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserUpdateAclRequest.user)
+  return user_.GetNoArena();
+}
+inline void AuthUserUpdateAclRequest::set_user(const ::std::string& value) {
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:etcdserverpb.AuthUserUpdateAclRequest.user)
+}
+#if LANG_CXX11
+inline void AuthUserUpdateAclRequest::set_user(::std::string&& value) {
+  
+  user_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:etcdserverpb.AuthUserUpdateAclRequest.user)
+}
+#endif
+inline void AuthUserUpdateAclRequest::set_user(const char* value) {
+  GOOGLE_DCHECK(value != NULL);
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:etcdserverpb.AuthUserUpdateAclRequest.user)
+}
+inline void AuthUserUpdateAclRequest::set_user(const char* value, size_t size) {
+  
+  user_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:etcdserverpb.AuthUserUpdateAclRequest.user)
+}
+inline ::std::string* AuthUserUpdateAclRequest::mutable_user() {
+  
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserUpdateAclRequest.user)
+  return user_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* AuthUserUpdateAclRequest::release_user() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthUserUpdateAclRequest.user)
+  
+  return user_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void AuthUserUpdateAclRequest::set_allocated_user(::std::string* user) {
+  if (user != NULL) {
+    
+  } else {
+    
+  }
+  user_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), user);
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthUserUpdateAclRequest.user)
+}
+
+// repeated .authpb.AclEntry acl = 2;
+inline int AuthUserUpdateAclRequest::acl_size() const {
+  return acl_.size();
+}
+inline ::authpb::AclEntry* AuthUserUpdateAclRequest::mutable_acl(int index) {
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserUpdateAclRequest.acl)
+  return acl_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >*
+AuthUserUpdateAclRequest::mutable_acl() {
+  // @@protoc_insertion_point(field_mutable_list:etcdserverpb.AuthUserUpdateAclRequest.acl)
+  return &acl_;
+}
+inline const ::authpb::AclEntry& AuthUserUpdateAclRequest::acl(int index) const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserUpdateAclRequest.acl)
+  return acl_.Get(index);
+}
+inline ::authpb::AclEntry* AuthUserUpdateAclRequest::add_acl() {
+  // @@protoc_insertion_point(field_add:etcdserverpb.AuthUserUpdateAclRequest.acl)
+  return acl_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >&
+AuthUserUpdateAclRequest::acl() const {
+  // @@protoc_insertion_point(field_list:etcdserverpb.AuthUserUpdateAclRequest.acl)
+  return acl_;
+}
+
+// -------------------------------------------------------------------
+
 // AuthEnableResponse
 
 // .etcdserverpb.ResponseHeader header = 1;
@@ -18107,9 +19523,373 @@ inline void AuthRoleRevokePermissionResponse::set_allocated_header(::etcdserverp
   // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthRoleRevokePermissionResponse.header)
 }
 
+// -------------------------------------------------------------------
+
+// AuthPrototypeUpdateResponse
+
+// .etcdserverpb.ResponseHeader header = 1;
+inline bool AuthPrototypeUpdateResponse::has_header() const {
+  return this != internal_default_instance() && header_ != NULL;
+}
+inline void AuthPrototypeUpdateResponse::clear_header() {
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeUpdateResponse::_internal_header() const {
+  return *header_;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeUpdateResponse::header() const {
+  const ::etcdserverpb::ResponseHeader* p = header_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeUpdateResponse.header)
+  return p != NULL ? *p : *reinterpret_cast<const ::etcdserverpb::ResponseHeader*>(
+      &::etcdserverpb::_ResponseHeader_default_instance_);
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeUpdateResponse::release_header() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthPrototypeUpdateResponse.header)
+  
+  ::etcdserverpb::ResponseHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeUpdateResponse::mutable_header() {
+  
+  if (header_ == NULL) {
+    auto* p = CreateMaybeMessage<::etcdserverpb::ResponseHeader>(GetArenaNoVirtual());
+    header_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeUpdateResponse.header)
+  return header_;
+}
+inline void AuthPrototypeUpdateResponse::set_allocated_header(::etcdserverpb::ResponseHeader* header) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete header_;
+  }
+  if (header) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      header = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, header, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  header_ = header;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthPrototypeUpdateResponse.header)
+}
+
+// -------------------------------------------------------------------
+
+// AuthPrototypeDeleteResponse
+
+// .etcdserverpb.ResponseHeader header = 1;
+inline bool AuthPrototypeDeleteResponse::has_header() const {
+  return this != internal_default_instance() && header_ != NULL;
+}
+inline void AuthPrototypeDeleteResponse::clear_header() {
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeDeleteResponse::_internal_header() const {
+  return *header_;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeDeleteResponse::header() const {
+  const ::etcdserverpb::ResponseHeader* p = header_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeDeleteResponse.header)
+  return p != NULL ? *p : *reinterpret_cast<const ::etcdserverpb::ResponseHeader*>(
+      &::etcdserverpb::_ResponseHeader_default_instance_);
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeDeleteResponse::release_header() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthPrototypeDeleteResponse.header)
+  
+  ::etcdserverpb::ResponseHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeDeleteResponse::mutable_header() {
+  
+  if (header_ == NULL) {
+    auto* p = CreateMaybeMessage<::etcdserverpb::ResponseHeader>(GetArenaNoVirtual());
+    header_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeDeleteResponse.header)
+  return header_;
+}
+inline void AuthPrototypeDeleteResponse::set_allocated_header(::etcdserverpb::ResponseHeader* header) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete header_;
+  }
+  if (header) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      header = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, header, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  header_ = header;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthPrototypeDeleteResponse.header)
+}
+
+// -------------------------------------------------------------------
+
+// AuthPrototypeListResponse
+
+// .etcdserverpb.ResponseHeader header = 1;
+inline bool AuthPrototypeListResponse::has_header() const {
+  return this != internal_default_instance() && header_ != NULL;
+}
+inline void AuthPrototypeListResponse::clear_header() {
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeListResponse::_internal_header() const {
+  return *header_;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthPrototypeListResponse::header() const {
+  const ::etcdserverpb::ResponseHeader* p = header_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeListResponse.header)
+  return p != NULL ? *p : *reinterpret_cast<const ::etcdserverpb::ResponseHeader*>(
+      &::etcdserverpb::_ResponseHeader_default_instance_);
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeListResponse::release_header() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthPrototypeListResponse.header)
+  
+  ::etcdserverpb::ResponseHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+inline ::etcdserverpb::ResponseHeader* AuthPrototypeListResponse::mutable_header() {
+  
+  if (header_ == NULL) {
+    auto* p = CreateMaybeMessage<::etcdserverpb::ResponseHeader>(GetArenaNoVirtual());
+    header_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeListResponse.header)
+  return header_;
+}
+inline void AuthPrototypeListResponse::set_allocated_header(::etcdserverpb::ResponseHeader* header) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete header_;
+  }
+  if (header) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      header = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, header, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  header_ = header;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthPrototypeListResponse.header)
+}
+
+// repeated .authpb.Prototype prototypes = 2;
+inline int AuthPrototypeListResponse::prototypes_size() const {
+  return prototypes_.size();
+}
+inline ::authpb::Prototype* AuthPrototypeListResponse::mutable_prototypes(int index) {
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthPrototypeListResponse.prototypes)
+  return prototypes_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::authpb::Prototype >*
+AuthPrototypeListResponse::mutable_prototypes() {
+  // @@protoc_insertion_point(field_mutable_list:etcdserverpb.AuthPrototypeListResponse.prototypes)
+  return &prototypes_;
+}
+inline const ::authpb::Prototype& AuthPrototypeListResponse::prototypes(int index) const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthPrototypeListResponse.prototypes)
+  return prototypes_.Get(index);
+}
+inline ::authpb::Prototype* AuthPrototypeListResponse::add_prototypes() {
+  // @@protoc_insertion_point(field_add:etcdserverpb.AuthPrototypeListResponse.prototypes)
+  return prototypes_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::authpb::Prototype >&
+AuthPrototypeListResponse::prototypes() const {
+  // @@protoc_insertion_point(field_list:etcdserverpb.AuthPrototypeListResponse.prototypes)
+  return prototypes_;
+}
+
+// -------------------------------------------------------------------
+
+// AuthUserListAclResponse
+
+// .etcdserverpb.ResponseHeader header = 1;
+inline bool AuthUserListAclResponse::has_header() const {
+  return this != internal_default_instance() && header_ != NULL;
+}
+inline void AuthUserListAclResponse::clear_header() {
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthUserListAclResponse::_internal_header() const {
+  return *header_;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthUserListAclResponse::header() const {
+  const ::etcdserverpb::ResponseHeader* p = header_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserListAclResponse.header)
+  return p != NULL ? *p : *reinterpret_cast<const ::etcdserverpb::ResponseHeader*>(
+      &::etcdserverpb::_ResponseHeader_default_instance_);
+}
+inline ::etcdserverpb::ResponseHeader* AuthUserListAclResponse::release_header() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthUserListAclResponse.header)
+  
+  ::etcdserverpb::ResponseHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+inline ::etcdserverpb::ResponseHeader* AuthUserListAclResponse::mutable_header() {
+  
+  if (header_ == NULL) {
+    auto* p = CreateMaybeMessage<::etcdserverpb::ResponseHeader>(GetArenaNoVirtual());
+    header_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserListAclResponse.header)
+  return header_;
+}
+inline void AuthUserListAclResponse::set_allocated_header(::etcdserverpb::ResponseHeader* header) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete header_;
+  }
+  if (header) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      header = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, header, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  header_ = header;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthUserListAclResponse.header)
+}
+
+// repeated .authpb.AclEntry acl = 2;
+inline int AuthUserListAclResponse::acl_size() const {
+  return acl_.size();
+}
+inline ::authpb::AclEntry* AuthUserListAclResponse::mutable_acl(int index) {
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserListAclResponse.acl)
+  return acl_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >*
+AuthUserListAclResponse::mutable_acl() {
+  // @@protoc_insertion_point(field_mutable_list:etcdserverpb.AuthUserListAclResponse.acl)
+  return &acl_;
+}
+inline const ::authpb::AclEntry& AuthUserListAclResponse::acl(int index) const {
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserListAclResponse.acl)
+  return acl_.Get(index);
+}
+inline ::authpb::AclEntry* AuthUserListAclResponse::add_acl() {
+  // @@protoc_insertion_point(field_add:etcdserverpb.AuthUserListAclResponse.acl)
+  return acl_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::authpb::AclEntry >&
+AuthUserListAclResponse::acl() const {
+  // @@protoc_insertion_point(field_list:etcdserverpb.AuthUserListAclResponse.acl)
+  return acl_;
+}
+
+// -------------------------------------------------------------------
+
+// AuthUserUpdateAclResponse
+
+// .etcdserverpb.ResponseHeader header = 1;
+inline bool AuthUserUpdateAclResponse::has_header() const {
+  return this != internal_default_instance() && header_ != NULL;
+}
+inline void AuthUserUpdateAclResponse::clear_header() {
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthUserUpdateAclResponse::_internal_header() const {
+  return *header_;
+}
+inline const ::etcdserverpb::ResponseHeader& AuthUserUpdateAclResponse::header() const {
+  const ::etcdserverpb::ResponseHeader* p = header_;
+  // @@protoc_insertion_point(field_get:etcdserverpb.AuthUserUpdateAclResponse.header)
+  return p != NULL ? *p : *reinterpret_cast<const ::etcdserverpb::ResponseHeader*>(
+      &::etcdserverpb::_ResponseHeader_default_instance_);
+}
+inline ::etcdserverpb::ResponseHeader* AuthUserUpdateAclResponse::release_header() {
+  // @@protoc_insertion_point(field_release:etcdserverpb.AuthUserUpdateAclResponse.header)
+  
+  ::etcdserverpb::ResponseHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+inline ::etcdserverpb::ResponseHeader* AuthUserUpdateAclResponse::mutable_header() {
+  
+  if (header_ == NULL) {
+    auto* p = CreateMaybeMessage<::etcdserverpb::ResponseHeader>(GetArenaNoVirtual());
+    header_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:etcdserverpb.AuthUserUpdateAclResponse.header)
+  return header_;
+}
+inline void AuthUserUpdateAclResponse::set_allocated_header(::etcdserverpb::ResponseHeader* header) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete header_;
+  }
+  if (header) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      header = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, header, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  header_ = header;
+  // @@protoc_insertion_point(field_set_allocated:etcdserverpb.AuthUserUpdateAclResponse.header)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
