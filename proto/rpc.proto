@@ -146,6 +146,16 @@ service Auth {
 
   // RoleRevokePermission revokes a key or range permission of a specified role.
   rpc RoleRevokePermission(AuthRoleRevokePermissionRequest) returns (AuthRoleRevokePermissionResponse) {}
+
+  rpc PrototypeUpdate(AuthPrototypeUpdateRequest) returns (AuthPrototypeUpdateResponse) {}
+
+  rpc PrototypeDelete(AuthPrototypeDeleteRequest) returns (AuthPrototypeDeleteResponse) {}
+
+  rpc PrototypeList(AuthPrototypeListRequest) returns (AuthPrototypeListResponse) {}
+
+  rpc UserListAcl(AuthUserListAclRequest) returns (AuthUserListAclResponse) {}
+
+  rpc UserUpdateAcl(AuthUserUpdateAclRequest) returns (AuthUserUpdateAclResponse) {}
 }
 
 message ResponseHeader {
@@ -781,6 +791,26 @@ message AuthRoleRevokePermissionRequest {
   string range_end = 3;
 }
 
+message AuthPrototypeUpdateRequest {
+  authpb.Prototype prototype = 1;
+}
+
+message AuthPrototypeDeleteRequest {
+  string name = 1;
+}
+
+message AuthPrototypeListRequest {
+}
+
+message AuthUserListAclRequest {
+  string user = 1;
+}
+
+message AuthUserUpdateAclRequest {
+  string user = 1;
+  repeated authpb.AclEntry acl = 2;
+}
+
 message AuthEnableResponse {
   ResponseHeader header = 1;
 }
@@ -852,5 +882,29 @@ message AuthRoleGrantPermissionResponse {
 }
 
 message AuthRoleRevokePermissionResponse {
+  ResponseHeader header = 1;
+}
+
+message AuthPrototypeUpdateResponse {
+  ResponseHeader header = 1;
+}
+
+message AuthPrototypeDeleteResponse {
+  ResponseHeader header = 1;
+}
+
+message AuthPrototypeListResponse {
+  ResponseHeader header = 1;
+
+  repeated authpb.Prototype prototypes = 2;
+}
+
+message AuthUserListAclResponse {
+  ResponseHeader header = 1;
+
+  repeated authpb.AclEntry acl = 2;
+}
+
+message AuthUserUpdateAclResponse {
   ResponseHeader header = 1;
 }

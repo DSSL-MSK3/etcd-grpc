@@ -84,6 +84,8 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::KeyValue, version_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::KeyValue, value_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::KeyValue, lease_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::KeyValue, prototype_idx_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::KeyValue, force_find_depth_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::mvccpb::Event, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -95,7 +97,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::mvccpb::KeyValue)},
-  { 11, -1, sizeof(::mvccpb::Event)},
+  { 13, -1, sizeof(::mvccpb::Event)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -124,17 +126,18 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\010kv.proto\022\006mvccpb\"u\n\010KeyValue\022\013\n\003key\030\001 "
-      "\001(\014\022\027\n\017create_revision\030\002 \001(\003\022\024\n\014mod_revi"
-      "sion\030\003 \001(\003\022\017\n\007version\030\004 \001(\003\022\r\n\005value\030\005 \001"
-      "(\014\022\r\n\005lease\030\006 \001(\003\"\221\001\n\005Event\022%\n\004type\030\001 \001("
-      "\0162\027.mvccpb.Event.EventType\022\034\n\002kv\030\002 \001(\0132\020"
-      ".mvccpb.KeyValue\022!\n\007prev_kv\030\003 \001(\0132\020.mvcc"
-      "pb.KeyValue\" \n\tEventType\022\007\n\003PUT\020\000\022\n\n\006DEL"
-      "ETE\020\001b\006proto3"
+      "\n\010kv.proto\022\006mvccpb\"\246\001\n\010KeyValue\022\013\n\003key\030\001"
+      " \001(\014\022\027\n\017create_revision\030\002 \001(\003\022\024\n\014mod_rev"
+      "ision\030\003 \001(\003\022\017\n\007version\030\004 \001(\003\022\r\n\005value\030\005 "
+      "\001(\014\022\r\n\005lease\030\006 \001(\003\022\025\n\rprototype_idx\030e \001("
+      "\003\022\030\n\020force_find_depth\030f \001(\005\"\221\001\n\005Event\022%\n"
+      "\004type\030\001 \001(\0162\027.mvccpb.Event.EventType\022\034\n\002"
+      "kv\030\002 \001(\0132\020.mvccpb.KeyValue\022!\n\007prev_kv\030\003 "
+      "\001(\0132\020.mvccpb.KeyValue\" \n\tEventType\022\007\n\003PU"
+      "T\020\000\022\n\n\006DELETE\020\001b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 293);
+      descriptor, 343);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "kv.proto", &protobuf_RegisterTypes);
 }
@@ -184,6 +187,8 @@ const int KeyValue::kModRevisionFieldNumber;
 const int KeyValue::kVersionFieldNumber;
 const int KeyValue::kValueFieldNumber;
 const int KeyValue::kLeaseFieldNumber;
+const int KeyValue::kPrototypeIdxFieldNumber;
+const int KeyValue::kForceFindDepthFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 KeyValue::KeyValue()
@@ -206,8 +211,8 @@ KeyValue::KeyValue(const KeyValue& from)
     value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
   }
   ::memcpy(&create_revision_, &from.create_revision_,
-    static_cast<size_t>(reinterpret_cast<char*>(&lease_) -
-    reinterpret_cast<char*>(&create_revision_)) + sizeof(lease_));
+    static_cast<size_t>(reinterpret_cast<char*>(&prototype_idx_) -
+    reinterpret_cast<char*>(&create_revision_)) + sizeof(prototype_idx_));
   // @@protoc_insertion_point(copy_constructor:mvccpb.KeyValue)
 }
 
@@ -215,8 +220,8 @@ void KeyValue::SharedCtor() {
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&create_revision_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&lease_) -
-      reinterpret_cast<char*>(&create_revision_)) + sizeof(lease_));
+      reinterpret_cast<char*>(&prototype_idx_) -
+      reinterpret_cast<char*>(&create_revision_)) + sizeof(prototype_idx_));
 }
 
 KeyValue::~KeyValue() {
@@ -252,8 +257,8 @@ void KeyValue::Clear() {
   key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&create_revision_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&lease_) -
-      reinterpret_cast<char*>(&create_revision_)) + sizeof(lease_));
+      reinterpret_cast<char*>(&prototype_idx_) -
+      reinterpret_cast<char*>(&create_revision_)) + sizeof(prototype_idx_));
   _internal_metadata_.Clear();
 }
 
@@ -263,7 +268,7 @@ bool KeyValue::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:mvccpb.KeyValue)
   for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -347,6 +352,34 @@ bool KeyValue::MergePartialFromCodedStream(
         break;
       }
 
+      // int64 prototype_idx = 101;
+      case 101: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(40u /* 808 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &prototype_idx_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 force_find_depth = 102;
+      case 102: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(48u /* 816 & 0xFF */)) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &force_find_depth_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -405,6 +438,16 @@ void KeyValue::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->lease(), output);
   }
 
+  // int64 prototype_idx = 101;
+  if (this->prototype_idx() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(101, this->prototype_idx(), output);
+  }
+
+  // int32 force_find_depth = 102;
+  if (this->force_find_depth() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(102, this->force_find_depth(), output);
+  }
+
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
@@ -451,6 +494,16 @@ void KeyValue::SerializeWithCachedSizes(
   // int64 lease = 6;
   if (this->lease() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->lease(), target);
+  }
+
+  // int64 prototype_idx = 101;
+  if (this->prototype_idx() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(101, this->prototype_idx(), target);
+  }
+
+  // int32 force_find_depth = 102;
+  if (this->force_find_depth() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(102, this->force_find_depth(), target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -512,6 +565,20 @@ size_t KeyValue::ByteSizeLong() const {
         this->lease());
   }
 
+  // int32 force_find_depth = 102;
+  if (this->force_find_depth() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->force_find_depth());
+  }
+
+  // int64 prototype_idx = 101;
+  if (this->prototype_idx() != 0) {
+    total_size += 2 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->prototype_idx());
+  }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -559,6 +626,12 @@ void KeyValue::MergeFrom(const KeyValue& from) {
   if (from.lease() != 0) {
     set_lease(from.lease());
   }
+  if (from.force_find_depth() != 0) {
+    set_force_find_depth(from.force_find_depth());
+  }
+  if (from.prototype_idx() != 0) {
+    set_prototype_idx(from.prototype_idx());
+  }
 }
 
 void KeyValue::CopyFrom(const ::google::protobuf::Message& from) {
@@ -593,6 +666,8 @@ void KeyValue::InternalSwap(KeyValue* other) {
   swap(mod_revision_, other->mod_revision_);
   swap(version_, other->version_);
   swap(lease_, other->lease_);
+  swap(force_find_depth_, other->force_find_depth_);
+  swap(prototype_idx_, other->prototype_idx_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 

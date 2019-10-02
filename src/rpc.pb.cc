@@ -20,7 +20,9 @@
 // @@protoc_insertion_point(includes)
 
 namespace protobuf_auth_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_auth_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_AclEntry;
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_auth_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Permission;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_auth_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Prototype;
 }  // namespace protobuf_auth_2eproto
 namespace protobuf_kv_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_kv_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_KeyValue;
@@ -404,6 +406,31 @@ class AuthRoleRevokePermissionRequestDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<AuthRoleRevokePermissionRequest>
       _instance;
 } _AuthRoleRevokePermissionRequest_default_instance_;
+class AuthPrototypeUpdateRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeUpdateRequest>
+      _instance;
+} _AuthPrototypeUpdateRequest_default_instance_;
+class AuthPrototypeDeleteRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeDeleteRequest>
+      _instance;
+} _AuthPrototypeDeleteRequest_default_instance_;
+class AuthPrototypeListRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeListRequest>
+      _instance;
+} _AuthPrototypeListRequest_default_instance_;
+class AuthUserListAclRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthUserListAclRequest>
+      _instance;
+} _AuthUserListAclRequest_default_instance_;
+class AuthUserUpdateAclRequestDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthUserUpdateAclRequest>
+      _instance;
+} _AuthUserUpdateAclRequest_default_instance_;
 class AuthEnableResponseDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<AuthEnableResponse>
@@ -484,6 +511,31 @@ class AuthRoleRevokePermissionResponseDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<AuthRoleRevokePermissionResponse>
       _instance;
 } _AuthRoleRevokePermissionResponse_default_instance_;
+class AuthPrototypeUpdateResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeUpdateResponse>
+      _instance;
+} _AuthPrototypeUpdateResponse_default_instance_;
+class AuthPrototypeDeleteResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeDeleteResponse>
+      _instance;
+} _AuthPrototypeDeleteResponse_default_instance_;
+class AuthPrototypeListResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthPrototypeListResponse>
+      _instance;
+} _AuthPrototypeListResponse_default_instance_;
+class AuthUserListAclResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthUserListAclResponse>
+      _instance;
+} _AuthUserListAclResponse_default_instance_;
+class AuthUserUpdateAclResponseDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<AuthUserUpdateAclResponse>
+      _instance;
+} _AuthUserUpdateAclResponse_default_instance_;
 }  // namespace etcdserverpb
 namespace protobuf_rpc_2eproto {
 static void InitDefaultsResponseHeader() {
@@ -1478,6 +1530,78 @@ static void InitDefaultsAuthRoleRevokePermissionRequest() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_AuthRoleRevokePermissionRequest =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAuthRoleRevokePermissionRequest}, {}};
 
+static void InitDefaultsAuthPrototypeUpdateRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeUpdateRequest_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeUpdateRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeUpdateRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AuthPrototypeUpdateRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthPrototypeUpdateRequest}, {
+      &protobuf_auth_2eproto::scc_info_Prototype.base,}};
+
+static void InitDefaultsAuthPrototypeDeleteRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeDeleteRequest_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeDeleteRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeDeleteRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AuthPrototypeDeleteRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAuthPrototypeDeleteRequest}, {}};
+
+static void InitDefaultsAuthPrototypeListRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeListRequest_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeListRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeListRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AuthPrototypeListRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAuthPrototypeListRequest}, {}};
+
+static void InitDefaultsAuthUserListAclRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthUserListAclRequest_default_instance_;
+    new (ptr) ::etcdserverpb::AuthUserListAclRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthUserListAclRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_AuthUserListAclRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAuthUserListAclRequest}, {}};
+
+static void InitDefaultsAuthUserUpdateAclRequest() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthUserUpdateAclRequest_default_instance_;
+    new (ptr) ::etcdserverpb::AuthUserUpdateAclRequest();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthUserUpdateAclRequest::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AuthUserUpdateAclRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthUserUpdateAclRequest}, {
+      &protobuf_auth_2eproto::scc_info_AclEntry.base,}};
+
 static void InitDefaultsAuthEnableResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -1719,6 +1843,83 @@ static void InitDefaultsAuthRoleRevokePermissionResponse() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthRoleRevokePermissionResponse}, {
       &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,}};
 
+static void InitDefaultsAuthPrototypeUpdateResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeUpdateResponse_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeUpdateResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeUpdateResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AuthPrototypeUpdateResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthPrototypeUpdateResponse}, {
+      &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,}};
+
+static void InitDefaultsAuthPrototypeDeleteResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeDeleteResponse_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeDeleteResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeDeleteResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AuthPrototypeDeleteResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthPrototypeDeleteResponse}, {
+      &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,}};
+
+static void InitDefaultsAuthPrototypeListResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthPrototypeListResponse_default_instance_;
+    new (ptr) ::etcdserverpb::AuthPrototypeListResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthPrototypeListResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<2> scc_info_AuthPrototypeListResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsAuthPrototypeListResponse}, {
+      &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,
+      &protobuf_auth_2eproto::scc_info_Prototype.base,}};
+
+static void InitDefaultsAuthUserListAclResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthUserListAclResponse_default_instance_;
+    new (ptr) ::etcdserverpb::AuthUserListAclResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthUserListAclResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<2> scc_info_AuthUserListAclResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsAuthUserListAclResponse}, {
+      &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,
+      &protobuf_auth_2eproto::scc_info_AclEntry.base,}};
+
+static void InitDefaultsAuthUserUpdateAclResponse() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::etcdserverpb::_AuthUserUpdateAclResponse_default_instance_;
+    new (ptr) ::etcdserverpb::AuthUserUpdateAclResponse();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::etcdserverpb::AuthUserUpdateAclResponse::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_AuthUserUpdateAclResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAuthUserUpdateAclResponse}, {
+      &protobuf_rpc_2eproto::scc_info_ResponseHeader.base,}};
+
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_ResponseHeader.base);
   ::google::protobuf::internal::InitSCC(&scc_info_RangeRequest.base);
@@ -1787,6 +1988,11 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleDeleteRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleGrantPermissionRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleRevokePermissionRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeUpdateRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeDeleteRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeListRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthUserListAclRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthUserUpdateAclRequest.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthEnableResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthDisableResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthenticateResponse.base);
@@ -1803,9 +2009,14 @@ void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleDeleteResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleGrantPermissionResponse.base);
   ::google::protobuf::internal::InitSCC(&scc_info_AuthRoleRevokePermissionResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeUpdateResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeDeleteResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthPrototypeListResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthUserListAclResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AuthUserUpdateAclResponse.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[85];
+::google::protobuf::Metadata file_level_metadata[95];
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[7];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
@@ -2320,6 +2531,36 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthRoleRevokePermissionRequest, key_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthRoleRevokePermissionRequest, range_end_),
   ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeUpdateRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeUpdateRequest, prototype_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeDeleteRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeDeleteRequest, name_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeListRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserListAclRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserListAclRequest, user_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserUpdateAclRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserUpdateAclRequest, user_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserUpdateAclRequest, acl_),
+  ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthEnableResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -2420,6 +2661,38 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthRoleRevokePermissionResponse, header_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeUpdateResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeUpdateResponse, header_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeDeleteResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeDeleteResponse, header_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeListResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeListResponse, header_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthPrototypeListResponse, prototypes_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserListAclResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserListAclResponse, header_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserListAclResponse, acl_),
+  ~0u,  // no _has_bits_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserUpdateAclResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::etcdserverpb::AuthUserUpdateAclResponse, header_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::etcdserverpb::ResponseHeader)},
@@ -2491,22 +2764,32 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 489, -1, sizeof(::etcdserverpb::AuthRoleDeleteRequest)},
   { 495, -1, sizeof(::etcdserverpb::AuthRoleGrantPermissionRequest)},
   { 502, -1, sizeof(::etcdserverpb::AuthRoleRevokePermissionRequest)},
-  { 510, -1, sizeof(::etcdserverpb::AuthEnableResponse)},
-  { 516, -1, sizeof(::etcdserverpb::AuthDisableResponse)},
-  { 522, -1, sizeof(::etcdserverpb::AuthenticateResponse)},
-  { 529, -1, sizeof(::etcdserverpb::AuthUserAddResponse)},
-  { 535, -1, sizeof(::etcdserverpb::AuthUserGetResponse)},
-  { 542, -1, sizeof(::etcdserverpb::AuthUserDeleteResponse)},
-  { 548, -1, sizeof(::etcdserverpb::AuthUserChangePasswordResponse)},
-  { 554, -1, sizeof(::etcdserverpb::AuthUserGrantRoleResponse)},
-  { 560, -1, sizeof(::etcdserverpb::AuthUserRevokeRoleResponse)},
-  { 566, -1, sizeof(::etcdserverpb::AuthRoleAddResponse)},
-  { 572, -1, sizeof(::etcdserverpb::AuthRoleGetResponse)},
-  { 579, -1, sizeof(::etcdserverpb::AuthRoleListResponse)},
-  { 586, -1, sizeof(::etcdserverpb::AuthUserListResponse)},
-  { 593, -1, sizeof(::etcdserverpb::AuthRoleDeleteResponse)},
-  { 599, -1, sizeof(::etcdserverpb::AuthRoleGrantPermissionResponse)},
-  { 605, -1, sizeof(::etcdserverpb::AuthRoleRevokePermissionResponse)},
+  { 510, -1, sizeof(::etcdserverpb::AuthPrototypeUpdateRequest)},
+  { 516, -1, sizeof(::etcdserverpb::AuthPrototypeDeleteRequest)},
+  { 522, -1, sizeof(::etcdserverpb::AuthPrototypeListRequest)},
+  { 527, -1, sizeof(::etcdserverpb::AuthUserListAclRequest)},
+  { 533, -1, sizeof(::etcdserverpb::AuthUserUpdateAclRequest)},
+  { 540, -1, sizeof(::etcdserverpb::AuthEnableResponse)},
+  { 546, -1, sizeof(::etcdserverpb::AuthDisableResponse)},
+  { 552, -1, sizeof(::etcdserverpb::AuthenticateResponse)},
+  { 559, -1, sizeof(::etcdserverpb::AuthUserAddResponse)},
+  { 565, -1, sizeof(::etcdserverpb::AuthUserGetResponse)},
+  { 572, -1, sizeof(::etcdserverpb::AuthUserDeleteResponse)},
+  { 578, -1, sizeof(::etcdserverpb::AuthUserChangePasswordResponse)},
+  { 584, -1, sizeof(::etcdserverpb::AuthUserGrantRoleResponse)},
+  { 590, -1, sizeof(::etcdserverpb::AuthUserRevokeRoleResponse)},
+  { 596, -1, sizeof(::etcdserverpb::AuthRoleAddResponse)},
+  { 602, -1, sizeof(::etcdserverpb::AuthRoleGetResponse)},
+  { 609, -1, sizeof(::etcdserverpb::AuthRoleListResponse)},
+  { 616, -1, sizeof(::etcdserverpb::AuthUserListResponse)},
+  { 623, -1, sizeof(::etcdserverpb::AuthRoleDeleteResponse)},
+  { 629, -1, sizeof(::etcdserverpb::AuthRoleGrantPermissionResponse)},
+  { 635, -1, sizeof(::etcdserverpb::AuthRoleRevokePermissionResponse)},
+  { 641, -1, sizeof(::etcdserverpb::AuthPrototypeUpdateResponse)},
+  { 647, -1, sizeof(::etcdserverpb::AuthPrototypeDeleteResponse)},
+  { 653, -1, sizeof(::etcdserverpb::AuthPrototypeListResponse)},
+  { 660, -1, sizeof(::etcdserverpb::AuthUserListAclResponse)},
+  { 667, -1, sizeof(::etcdserverpb::AuthUserUpdateAclResponse)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -2579,6 +2862,11 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleDeleteRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleGrantPermissionRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleRevokePermissionRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeUpdateRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeDeleteRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeListRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthUserListAclRequest_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthUserUpdateAclRequest_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthEnableResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthDisableResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthenticateResponse_default_instance_),
@@ -2595,6 +2883,11 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleDeleteResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleGrantPermissionResponse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthRoleRevokePermissionResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeUpdateResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeDeleteResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthPrototypeListResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthUserListAclResponse_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::etcdserverpb::_AuthUserUpdateAclResponse_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -2612,7 +2905,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 85);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 95);
 }
 
 void AddDescriptorsImpl() {
@@ -2775,125 +3068,155 @@ void AddDescriptorsImpl() {
       "onRequest\022\014\n\004name\030\001 \001(\t\022 \n\004perm\030\002 \001(\0132\022."
       "authpb.Permission\"O\n\037AuthRoleRevokePermi"
       "ssionRequest\022\014\n\004role\030\001 \001(\t\022\013\n\003key\030\002 \001(\t\022"
-      "\021\n\trange_end\030\003 \001(\t\"B\n\022AuthEnableResponse"
+      "\021\n\trange_end\030\003 \001(\t\"B\n\032AuthPrototypeUpdat"
+      "eRequest\022$\n\tprototype\030\001 \001(\0132\021.authpb.Pro"
+      "totype\"*\n\032AuthPrototypeDeleteRequest\022\014\n\004"
+      "name\030\001 \001(\t\"\032\n\030AuthPrototypeListRequest\"&"
+      "\n\026AuthUserListAclRequest\022\014\n\004user\030\001 \001(\t\"G"
+      "\n\030AuthUserUpdateAclRequest\022\014\n\004user\030\001 \001(\t"
+      "\022\035\n\003acl\030\002 \003(\0132\020.authpb.AclEntry\"B\n\022AuthE"
+      "nableResponse\022,\n\006header\030\001 \001(\0132\034.etcdserv"
+      "erpb.ResponseHeader\"C\n\023AuthDisableRespon"
+      "se\022,\n\006header\030\001 \001(\0132\034.etcdserverpb.Respon"
+      "seHeader\"S\n\024AuthenticateResponse\022,\n\006head"
+      "er\030\001 \001(\0132\034.etcdserverpb.ResponseHeader\022\r"
+      "\n\005token\030\002 \001(\t\"C\n\023AuthUserAddResponse\022,\n\006"
+      "header\030\001 \001(\0132\034.etcdserverpb.ResponseHead"
+      "er\"R\n\023AuthUserGetResponse\022,\n\006header\030\001 \001("
+      "\0132\034.etcdserverpb.ResponseHeader\022\r\n\005roles"
+      "\030\002 \003(\t\"F\n\026AuthUserDeleteResponse\022,\n\006head"
+      "er\030\001 \001(\0132\034.etcdserverpb.ResponseHeader\"N"
+      "\n\036AuthUserChangePasswordResponse\022,\n\006head"
+      "er\030\001 \001(\0132\034.etcdserverpb.ResponseHeader\"I"
+      "\n\031AuthUserGrantRoleResponse\022,\n\006header\030\001 "
+      "\001(\0132\034.etcdserverpb.ResponseHeader\"J\n\032Aut"
+      "hUserRevokeRoleResponse\022,\n\006header\030\001 \001(\0132"
+      "\034.etcdserverpb.ResponseHeader\"C\n\023AuthRol"
+      "eAddResponse\022,\n\006header\030\001 \001(\0132\034.etcdserve"
+      "rpb.ResponseHeader\"e\n\023AuthRoleGetRespons"
+      "e\022,\n\006header\030\001 \001(\0132\034.etcdserverpb.Respons"
+      "eHeader\022 \n\004perm\030\002 \003(\0132\022.authpb.Permissio"
+      "n\"S\n\024AuthRoleListResponse\022,\n\006header\030\001 \001("
+      "\0132\034.etcdserverpb.ResponseHeader\022\r\n\005roles"
+      "\030\002 \003(\t\"S\n\024AuthUserListResponse\022,\n\006header"
+      "\030\001 \001(\0132\034.etcdserverpb.ResponseHeader\022\r\n\005"
+      "users\030\002 \003(\t\"F\n\026AuthRoleDeleteResponse\022,\n"
+      "\006header\030\001 \001(\0132\034.etcdserverpb.ResponseHea"
+      "der\"O\n\037AuthRoleGrantPermissionResponse\022,"
+      "\n\006header\030\001 \001(\0132\034.etcdserverpb.ResponseHe"
+      "ader\"P\n AuthRoleRevokePermissionResponse"
       "\022,\n\006header\030\001 \001(\0132\034.etcdserverpb.Response"
-      "Header\"C\n\023AuthDisableResponse\022,\n\006header\030"
-      "\001 \001(\0132\034.etcdserverpb.ResponseHeader\"S\n\024A"
-      "uthenticateResponse\022,\n\006header\030\001 \001(\0132\034.et"
-      "cdserverpb.ResponseHeader\022\r\n\005token\030\002 \001(\t"
-      "\"C\n\023AuthUserAddResponse\022,\n\006header\030\001 \001(\0132"
-      "\034.etcdserverpb.ResponseHeader\"R\n\023AuthUse"
-      "rGetResponse\022,\n\006header\030\001 \001(\0132\034.etcdserve"
-      "rpb.ResponseHeader\022\r\n\005roles\030\002 \003(\t\"F\n\026Aut"
-      "hUserDeleteResponse\022,\n\006header\030\001 \001(\0132\034.et"
-      "cdserverpb.ResponseHeader\"N\n\036AuthUserCha"
-      "ngePasswordResponse\022,\n\006header\030\001 \001(\0132\034.et"
-      "cdserverpb.ResponseHeader\"I\n\031AuthUserGra"
-      "ntRoleResponse\022,\n\006header\030\001 \001(\0132\034.etcdser"
-      "verpb.ResponseHeader\"J\n\032AuthUserRevokeRo"
-      "leResponse\022,\n\006header\030\001 \001(\0132\034.etcdserverp"
-      "b.ResponseHeader\"C\n\023AuthRoleAddResponse\022"
-      ",\n\006header\030\001 \001(\0132\034.etcdserverpb.ResponseH"
-      "eader\"e\n\023AuthRoleGetResponse\022,\n\006header\030\001"
-      " \001(\0132\034.etcdserverpb.ResponseHeader\022 \n\004pe"
-      "rm\030\002 \003(\0132\022.authpb.Permission\"S\n\024AuthRole"
-      "ListResponse\022,\n\006header\030\001 \001(\0132\034.etcdserve"
-      "rpb.ResponseHeader\022\r\n\005roles\030\002 \003(\t\"S\n\024Aut"
-      "hUserListResponse\022,\n\006header\030\001 \001(\0132\034.etcd"
-      "serverpb.ResponseHeader\022\r\n\005users\030\002 \003(\t\"F"
-      "\n\026AuthRoleDeleteResponse\022,\n\006header\030\001 \001(\013"
-      "2\034.etcdserverpb.ResponseHeader\"O\n\037AuthRo"
-      "leGrantPermissionResponse\022,\n\006header\030\001 \001("
-      "\0132\034.etcdserverpb.ResponseHeader\"P\n AuthR"
-      "oleRevokePermissionResponse\022,\n\006header\030\001 "
-      "\001(\0132\034.etcdserverpb.ResponseHeader*/\n\tAla"
-      "rmType\022\010\n\004NONE\020\000\022\013\n\007NOSPACE\020\001\022\013\n\007CORRUPT"
-      "\020\0022\352\002\n\002KV\022B\n\005Range\022\032.etcdserverpb.RangeR"
-      "equest\032\033.etcdserverpb.RangeResponse\"\000\022<\n"
-      "\003Put\022\030.etcdserverpb.PutRequest\032\031.etcdser"
-      "verpb.PutResponse\"\000\022T\n\013DeleteRange\022 .etc"
-      "dserverpb.DeleteRangeRequest\032!.etcdserve"
-      "rpb.DeleteRangeResponse\"\000\022<\n\003Txn\022\030.etcds"
-      "erverpb.TxnRequest\032\031.etcdserverpb.TxnRes"
-      "ponse\"\000\022N\n\007Compact\022\037.etcdserverpb.Compac"
-      "tionRequest\032 .etcdserverpb.CompactionRes"
-      "ponse\"\0002O\n\005Watch\022F\n\005Watch\022\032.etcdserverpb"
-      ".WatchRequest\032\033.etcdserverpb.WatchRespon"
-      "se\"\000(\0010\0012\313\003\n\005Lease\022Q\n\nLeaseGrant\022\037.etcds"
-      "erverpb.LeaseGrantRequest\032 .etcdserverpb"
-      ".LeaseGrantResponse\"\000\022T\n\013LeaseRevoke\022 .e"
-      "tcdserverpb.LeaseRevokeRequest\032!.etcdser"
-      "verpb.LeaseRevokeResponse\"\000\022a\n\016LeaseKeep"
-      "Alive\022#.etcdserverpb.LeaseKeepAliveReque"
-      "st\032$.etcdserverpb.LeaseKeepAliveResponse"
-      "\"\000(\0010\001\022`\n\017LeaseTimeToLive\022$.etcdserverpb"
-      ".LeaseTimeToLiveRequest\032%.etcdserverpb.L"
-      "easeTimeToLiveResponse\"\000\022T\n\013LeaseLeases\022"
-      " .etcdserverpb.LeaseLeasesRequest\032!.etcd"
-      "serverpb.LeaseLeasesResponse\"\0002\336\002\n\007Clust"
-      "er\022N\n\tMemberAdd\022\036.etcdserverpb.MemberAdd"
-      "Request\032\037.etcdserverpb.MemberAddResponse"
-      "\"\000\022W\n\014MemberRemove\022!.etcdserverpb.Member"
-      "RemoveRequest\032\".etcdserverpb.MemberRemov"
-      "eResponse\"\000\022W\n\014MemberUpdate\022!.etcdserver"
-      "pb.MemberUpdateRequest\032\".etcdserverpb.Me"
-      "mberUpdateResponse\"\000\022Q\n\nMemberList\022\037.etc"
-      "dserverpb.MemberListRequest\032 .etcdserver"
-      "pb.MemberListResponse\"\0002\225\004\n\013Maintenance\022"
-      "B\n\005Alarm\022\032.etcdserverpb.AlarmRequest\032\033.e"
-      "tcdserverpb.AlarmResponse\"\000\022E\n\006Status\022\033."
-      "etcdserverpb.StatusRequest\032\034.etcdserverp"
-      "b.StatusResponse\"\000\022Q\n\nDefragment\022\037.etcds"
-      "erverpb.DefragmentRequest\032 .etcdserverpb"
-      ".DefragmentResponse\"\000\022\?\n\004Hash\022\031.etcdserv"
-      "erpb.HashRequest\032\032.etcdserverpb.HashResp"
-      "onse\"\000\022E\n\006HashKV\022\033.etcdserverpb.HashKVRe"
-      "quest\032\034.etcdserverpb.HashKVResponse\"\000\022M\n"
-      "\010Snapshot\022\035.etcdserverpb.SnapshotRequest"
-      "\032\036.etcdserverpb.SnapshotResponse\"\0000\001\022Q\n\n"
-      "MoveLeader\022\037.etcdserverpb.MoveLeaderRequ"
-      "est\032 .etcdserverpb.MoveLeaderResponse\"\0002"
-      "\335\013\n\004Auth\022Q\n\nAuthEnable\022\037.etcdserverpb.Au"
-      "thEnableRequest\032 .etcdserverpb.AuthEnabl"
-      "eResponse\"\000\022T\n\013AuthDisable\022 .etcdserverp"
-      "b.AuthDisableRequest\032!.etcdserverpb.Auth"
-      "DisableResponse\"\000\022W\n\014Authenticate\022!.etcd"
-      "serverpb.AuthenticateRequest\032\".etcdserve"
-      "rpb.AuthenticateResponse\"\000\022P\n\007UserAdd\022 ."
-      "etcdserverpb.AuthUserAddRequest\032!.etcdse"
-      "rverpb.AuthUserAddResponse\"\000\022P\n\007UserGet\022"
-      " .etcdserverpb.AuthUserGetRequest\032!.etcd"
-      "serverpb.AuthUserGetResponse\"\000\022S\n\010UserLi"
-      "st\022!.etcdserverpb.AuthUserListRequest\032\"."
-      "etcdserverpb.AuthUserListResponse\"\000\022Y\n\nU"
-      "serDelete\022#.etcdserverpb.AuthUserDeleteR"
-      "equest\032$.etcdserverpb.AuthUserDeleteResp"
-      "onse\"\000\022q\n\022UserChangePassword\022+.etcdserve"
-      "rpb.AuthUserChangePasswordRequest\032,.etcd"
-      "serverpb.AuthUserChangePasswordResponse\""
-      "\000\022b\n\rUserGrantRole\022&.etcdserverpb.AuthUs"
-      "erGrantRoleRequest\032\'.etcdserverpb.AuthUs"
-      "erGrantRoleResponse\"\000\022e\n\016UserRevokeRole\022"
-      "\'.etcdserverpb.AuthUserRevokeRoleRequest"
-      "\032(.etcdserverpb.AuthUserRevokeRoleRespon"
-      "se\"\000\022P\n\007RoleAdd\022 .etcdserverpb.AuthRoleA"
-      "ddRequest\032!.etcdserverpb.AuthRoleAddResp"
-      "onse\"\000\022P\n\007RoleGet\022 .etcdserverpb.AuthRol"
-      "eGetRequest\032!.etcdserverpb.AuthRoleGetRe"
-      "sponse\"\000\022S\n\010RoleList\022!.etcdserverpb.Auth"
-      "RoleListRequest\032\".etcdserverpb.AuthRoleL"
-      "istResponse\"\000\022Y\n\nRoleDelete\022#.etcdserver"
-      "pb.AuthRoleDeleteRequest\032$.etcdserverpb."
-      "AuthRoleDeleteResponse\"\000\022t\n\023RoleGrantPer"
-      "mission\022,.etcdserverpb.AuthRoleGrantPerm"
-      "issionRequest\032-.etcdserverpb.AuthRoleGra"
-      "ntPermissionResponse\"\000\022w\n\024RoleRevokePerm"
-      "ission\022-.etcdserverpb.AuthRoleRevokePerm"
-      "issionRequest\032..etcdserverpb.AuthRoleRev"
-      "okePermissionResponse\"\000b\006proto3"
+      "Header\"K\n\033AuthPrototypeUpdateResponse\022,\n"
+      "\006header\030\001 \001(\0132\034.etcdserverpb.ResponseHea"
+      "der\"K\n\033AuthPrototypeDeleteResponse\022,\n\006he"
+      "ader\030\001 \001(\0132\034.etcdserverpb.ResponseHeader"
+      "\"p\n\031AuthPrototypeListResponse\022,\n\006header\030"
+      "\001 \001(\0132\034.etcdserverpb.ResponseHeader\022%\n\np"
+      "rototypes\030\002 \003(\0132\021.authpb.Prototype\"f\n\027Au"
+      "thUserListAclResponse\022,\n\006header\030\001 \001(\0132\034."
+      "etcdserverpb.ResponseHeader\022\035\n\003acl\030\002 \003(\013"
+      "2\020.authpb.AclEntry\"I\n\031AuthUserUpdateAclR"
+      "esponse\022,\n\006header\030\001 \001(\0132\034.etcdserverpb.R"
+      "esponseHeader*/\n\tAlarmType\022\010\n\004NONE\020\000\022\013\n\007"
+      "NOSPACE\020\001\022\013\n\007CORRUPT\020\0022\352\002\n\002KV\022B\n\005Range\022\032"
+      ".etcdserverpb.RangeRequest\032\033.etcdserverp"
+      "b.RangeResponse\"\000\022<\n\003Put\022\030.etcdserverpb."
+      "PutRequest\032\031.etcdserverpb.PutResponse\"\000\022"
+      "T\n\013DeleteRange\022 .etcdserverpb.DeleteRang"
+      "eRequest\032!.etcdserverpb.DeleteRangeRespo"
+      "nse\"\000\022<\n\003Txn\022\030.etcdserverpb.TxnRequest\032\031"
+      ".etcdserverpb.TxnResponse\"\000\022N\n\007Compact\022\037"
+      ".etcdserverpb.CompactionRequest\032 .etcdse"
+      "rverpb.CompactionResponse\"\0002O\n\005Watch\022F\n\005"
+      "Watch\022\032.etcdserverpb.WatchRequest\032\033.etcd"
+      "serverpb.WatchResponse\"\000(\0010\0012\313\003\n\005Lease\022Q"
+      "\n\nLeaseGrant\022\037.etcdserverpb.LeaseGrantRe"
+      "quest\032 .etcdserverpb.LeaseGrantResponse\""
+      "\000\022T\n\013LeaseRevoke\022 .etcdserverpb.LeaseRev"
+      "okeRequest\032!.etcdserverpb.LeaseRevokeRes"
+      "ponse\"\000\022a\n\016LeaseKeepAlive\022#.etcdserverpb"
+      ".LeaseKeepAliveRequest\032$.etcdserverpb.Le"
+      "aseKeepAliveResponse\"\000(\0010\001\022`\n\017LeaseTimeT"
+      "oLive\022$.etcdserverpb.LeaseTimeToLiveRequ"
+      "est\032%.etcdserverpb.LeaseTimeToLiveRespon"
+      "se\"\000\022T\n\013LeaseLeases\022 .etcdserverpb.Lease"
+      "LeasesRequest\032!.etcdserverpb.LeaseLeases"
+      "Response\"\0002\336\002\n\007Cluster\022N\n\tMemberAdd\022\036.et"
+      "cdserverpb.MemberAddRequest\032\037.etcdserver"
+      "pb.MemberAddResponse\"\000\022W\n\014MemberRemove\022!"
+      ".etcdserverpb.MemberRemoveRequest\032\".etcd"
+      "serverpb.MemberRemoveResponse\"\000\022W\n\014Membe"
+      "rUpdate\022!.etcdserverpb.MemberUpdateReque"
+      "st\032\".etcdserverpb.MemberUpdateResponse\"\000"
+      "\022Q\n\nMemberList\022\037.etcdserverpb.MemberList"
+      "Request\032 .etcdserverpb.MemberListRespons"
+      "e\"\0002\225\004\n\013Maintenance\022B\n\005Alarm\022\032.etcdserve"
+      "rpb.AlarmRequest\032\033.etcdserverpb.AlarmRes"
+      "ponse\"\000\022E\n\006Status\022\033.etcdserverpb.StatusR"
+      "equest\032\034.etcdserverpb.StatusResponse\"\000\022Q"
+      "\n\nDefragment\022\037.etcdserverpb.DefragmentRe"
+      "quest\032 .etcdserverpb.DefragmentResponse\""
+      "\000\022\?\n\004Hash\022\031.etcdserverpb.HashRequest\032\032.e"
+      "tcdserverpb.HashResponse\"\000\022E\n\006HashKV\022\033.e"
+      "tcdserverpb.HashKVRequest\032\034.etcdserverpb"
+      ".HashKVResponse\"\000\022M\n\010Snapshot\022\035.etcdserv"
+      "erpb.SnapshotRequest\032\036.etcdserverpb.Snap"
+      "shotResponse\"\0000\001\022Q\n\nMoveLeader\022\037.etcdser"
+      "verpb.MoveLeaderRequest\032 .etcdserverpb.M"
+      "oveLeaderResponse\"\0002\327\017\n\004Auth\022Q\n\nAuthEnab"
+      "le\022\037.etcdserverpb.AuthEnableRequest\032 .et"
+      "cdserverpb.AuthEnableResponse\"\000\022T\n\013AuthD"
+      "isable\022 .etcdserverpb.AuthDisableRequest"
+      "\032!.etcdserverpb.AuthDisableResponse\"\000\022W\n"
+      "\014Authenticate\022!.etcdserverpb.Authenticat"
+      "eRequest\032\".etcdserverpb.AuthenticateResp"
+      "onse\"\000\022P\n\007UserAdd\022 .etcdserverpb.AuthUse"
+      "rAddRequest\032!.etcdserverpb.AuthUserAddRe"
+      "sponse\"\000\022P\n\007UserGet\022 .etcdserverpb.AuthU"
+      "serGetRequest\032!.etcdserverpb.AuthUserGet"
+      "Response\"\000\022S\n\010UserList\022!.etcdserverpb.Au"
+      "thUserListRequest\032\".etcdserverpb.AuthUse"
+      "rListResponse\"\000\022Y\n\nUserDelete\022#.etcdserv"
+      "erpb.AuthUserDeleteRequest\032$.etcdserverp"
+      "b.AuthUserDeleteResponse\"\000\022q\n\022UserChange"
+      "Password\022+.etcdserverpb.AuthUserChangePa"
+      "sswordRequest\032,.etcdserverpb.AuthUserCha"
+      "ngePasswordResponse\"\000\022b\n\rUserGrantRole\022&"
+      ".etcdserverpb.AuthUserGrantRoleRequest\032\'"
+      ".etcdserverpb.AuthUserGrantRoleResponse\""
+      "\000\022e\n\016UserRevokeRole\022\'.etcdserverpb.AuthU"
+      "serRevokeRoleRequest\032(.etcdserverpb.Auth"
+      "UserRevokeRoleResponse\"\000\022P\n\007RoleAdd\022 .et"
+      "cdserverpb.AuthRoleAddRequest\032!.etcdserv"
+      "erpb.AuthRoleAddResponse\"\000\022P\n\007RoleGet\022 ."
+      "etcdserverpb.AuthRoleGetRequest\032!.etcdse"
+      "rverpb.AuthRoleGetResponse\"\000\022S\n\010RoleList"
+      "\022!.etcdserverpb.AuthRoleListRequest\032\".et"
+      "cdserverpb.AuthRoleListResponse\"\000\022Y\n\nRol"
+      "eDelete\022#.etcdserverpb.AuthRoleDeleteReq"
+      "uest\032$.etcdserverpb.AuthRoleDeleteRespon"
+      "se\"\000\022t\n\023RoleGrantPermission\022,.etcdserver"
+      "pb.AuthRoleGrantPermissionRequest\032-.etcd"
+      "serverpb.AuthRoleGrantPermissionResponse"
+      "\"\000\022w\n\024RoleRevokePermission\022-.etcdserverp"
+      "b.AuthRoleRevokePermissionRequest\032..etcd"
+      "serverpb.AuthRoleRevokePermissionRespons"
+      "e\"\000\022h\n\017PrototypeUpdate\022(.etcdserverpb.Au"
+      "thPrototypeUpdateRequest\032).etcdserverpb."
+      "AuthPrototypeUpdateResponse\"\000\022h\n\017Prototy"
+      "peDelete\022(.etcdserverpb.AuthPrototypeDel"
+      "eteRequest\032).etcdserverpb.AuthPrototypeD"
+      "eleteResponse\"\000\022b\n\rPrototypeList\022&.etcds"
+      "erverpb.AuthPrototypeListRequest\032\'.etcds"
+      "erverpb.AuthPrototypeListResponse\"\000\022\\\n\013U"
+      "serListAcl\022$.etcdserverpb.AuthUserListAc"
+      "lRequest\032%.etcdserverpb.AuthUserListAclR"
+      "esponse\"\000\022b\n\rUserUpdateAcl\022&.etcdserverp"
+      "b.AuthUserUpdateAclRequest\032\'.etcdserverp"
+      "b.AuthUserUpdateAclResponse\"\000b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 10911);
+      descriptor, 12117);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "rpc.proto", &protobuf_RegisterTypes);
   ::protobuf_kv_2eproto::AddDescriptors();
@@ -23337,6 +23660,1199 @@ void AuthRoleRevokePermissionRequest::InternalSwap(AuthRoleRevokePermissionReque
 
 // ===================================================================
 
+void AuthPrototypeUpdateRequest::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthPrototypeUpdateRequest_default_instance_._instance.get_mutable()->prototype_ = const_cast< ::authpb::Prototype*>(
+      ::authpb::Prototype::internal_default_instance());
+}
+void AuthPrototypeUpdateRequest::clear_prototype() {
+  if (GetArenaNoVirtual() == NULL && prototype_ != NULL) {
+    delete prototype_;
+  }
+  prototype_ = NULL;
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthPrototypeUpdateRequest::kPrototypeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeUpdateRequest::AuthPrototypeUpdateRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeUpdateRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeUpdateRequest)
+}
+AuthPrototypeUpdateRequest::AuthPrototypeUpdateRequest(const AuthPrototypeUpdateRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_prototype()) {
+    prototype_ = new ::authpb::Prototype(*from.prototype_);
+  } else {
+    prototype_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeUpdateRequest)
+}
+
+void AuthPrototypeUpdateRequest::SharedCtor() {
+  prototype_ = NULL;
+}
+
+AuthPrototypeUpdateRequest::~AuthPrototypeUpdateRequest() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeUpdateRequest)
+  SharedDtor();
+}
+
+void AuthPrototypeUpdateRequest::SharedDtor() {
+  if (this != internal_default_instance()) delete prototype_;
+}
+
+void AuthPrototypeUpdateRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeUpdateRequest::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeUpdateRequest& AuthPrototypeUpdateRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeUpdateRequest.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeUpdateRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && prototype_ != NULL) {
+    delete prototype_;
+  }
+  prototype_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeUpdateRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .authpb.Prototype prototype = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_prototype()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeUpdateRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeUpdateRequest)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeUpdateRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .authpb.Prototype prototype = 1;
+  if (this->has_prototype()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_prototype(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeUpdateRequest)
+}
+
+::google::protobuf::uint8* AuthPrototypeUpdateRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .authpb.Prototype prototype = 1;
+  if (this->has_prototype()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_prototype(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeUpdateRequest)
+  return target;
+}
+
+size_t AuthPrototypeUpdateRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .authpb.Prototype prototype = 1;
+  if (this->has_prototype()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *prototype_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeUpdateRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeUpdateRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeUpdateRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeUpdateRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeUpdateRequest)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeUpdateRequest::MergeFrom(const AuthPrototypeUpdateRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_prototype()) {
+    mutable_prototype()->::authpb::Prototype::MergeFrom(from.prototype());
+  }
+}
+
+void AuthPrototypeUpdateRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeUpdateRequest::CopyFrom(const AuthPrototypeUpdateRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeUpdateRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeUpdateRequest::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeUpdateRequest::Swap(AuthPrototypeUpdateRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeUpdateRequest::InternalSwap(AuthPrototypeUpdateRequest* other) {
+  using std::swap;
+  swap(prototype_, other->prototype_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeUpdateRequest::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthPrototypeDeleteRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthPrototypeDeleteRequest::kNameFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeDeleteRequest::AuthPrototypeDeleteRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeDeleteRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeDeleteRequest)
+}
+AuthPrototypeDeleteRequest::AuthPrototypeDeleteRequest(const AuthPrototypeDeleteRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.name().size() > 0) {
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeDeleteRequest)
+}
+
+void AuthPrototypeDeleteRequest::SharedCtor() {
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+AuthPrototypeDeleteRequest::~AuthPrototypeDeleteRequest() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeDeleteRequest)
+  SharedDtor();
+}
+
+void AuthPrototypeDeleteRequest::SharedDtor() {
+  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void AuthPrototypeDeleteRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeDeleteRequest::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeDeleteRequest& AuthPrototypeDeleteRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeDeleteRequest.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeDeleteRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeDeleteRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string name = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->name().data(), static_cast<int>(this->name().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "etcdserverpb.AuthPrototypeDeleteRequest.name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeDeleteRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeDeleteRequest)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeDeleteRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthPrototypeDeleteRequest.name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->name(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeDeleteRequest)
+}
+
+::google::protobuf::uint8* AuthPrototypeDeleteRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), static_cast<int>(this->name().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthPrototypeDeleteRequest.name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->name(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeDeleteRequest)
+  return target;
+}
+
+size_t AuthPrototypeDeleteRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeDeleteRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeDeleteRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeDeleteRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeDeleteRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeDeleteRequest)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeDeleteRequest::MergeFrom(const AuthPrototypeDeleteRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.name().size() > 0) {
+
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
+}
+
+void AuthPrototypeDeleteRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeDeleteRequest::CopyFrom(const AuthPrototypeDeleteRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeDeleteRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeDeleteRequest::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeDeleteRequest::Swap(AuthPrototypeDeleteRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeDeleteRequest::InternalSwap(AuthPrototypeDeleteRequest* other) {
+  using std::swap;
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeDeleteRequest::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthPrototypeListRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeListRequest::AuthPrototypeListRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeListRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeListRequest)
+}
+AuthPrototypeListRequest::AuthPrototypeListRequest(const AuthPrototypeListRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeListRequest)
+}
+
+void AuthPrototypeListRequest::SharedCtor() {
+}
+
+AuthPrototypeListRequest::~AuthPrototypeListRequest() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeListRequest)
+  SharedDtor();
+}
+
+void AuthPrototypeListRequest::SharedDtor() {
+}
+
+void AuthPrototypeListRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeListRequest::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeListRequest& AuthPrototypeListRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeListRequest.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeListRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeListRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeListRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeListRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+  handle_unusual:
+    if (tag == 0) {
+      goto success;
+    }
+    DO_(::google::protobuf::internal::WireFormat::SkipField(
+          input, tag, _internal_metadata_.mutable_unknown_fields()));
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeListRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeListRequest)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeListRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeListRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeListRequest)
+}
+
+::google::protobuf::uint8* AuthPrototypeListRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeListRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeListRequest)
+  return target;
+}
+
+size_t AuthPrototypeListRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeListRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeListRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeListRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeListRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeListRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeListRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeListRequest)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeListRequest::MergeFrom(const AuthPrototypeListRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeListRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void AuthPrototypeListRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeListRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeListRequest::CopyFrom(const AuthPrototypeListRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeListRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeListRequest::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeListRequest::Swap(AuthPrototypeListRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeListRequest::InternalSwap(AuthPrototypeListRequest* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeListRequest::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthUserListAclRequest::InitAsDefaultInstance() {
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthUserListAclRequest::kUserFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthUserListAclRequest::AuthUserListAclRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthUserListAclRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthUserListAclRequest)
+}
+AuthUserListAclRequest::AuthUserListAclRequest(const AuthUserListAclRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  user_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.user().size() > 0) {
+    user_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_);
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthUserListAclRequest)
+}
+
+void AuthUserListAclRequest::SharedCtor() {
+  user_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+AuthUserListAclRequest::~AuthUserListAclRequest() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthUserListAclRequest)
+  SharedDtor();
+}
+
+void AuthUserListAclRequest::SharedDtor() {
+  user_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void AuthUserListAclRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthUserListAclRequest::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthUserListAclRequest& AuthUserListAclRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthUserListAclRequest.base);
+  return *internal_default_instance();
+}
+
+
+void AuthUserListAclRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthUserListAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  user_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+bool AuthUserListAclRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthUserListAclRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string user = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_user()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->user().data(), static_cast<int>(this->user().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "etcdserverpb.AuthUserListAclRequest.user"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthUserListAclRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthUserListAclRequest)
+  return false;
+#undef DO_
+}
+
+void AuthUserListAclRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthUserListAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string user = 1;
+  if (this->user().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->user().data(), static_cast<int>(this->user().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthUserListAclRequest.user");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->user(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthUserListAclRequest)
+}
+
+::google::protobuf::uint8* AuthUserListAclRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthUserListAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string user = 1;
+  if (this->user().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->user().data(), static_cast<int>(this->user().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthUserListAclRequest.user");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->user(), target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthUserListAclRequest)
+  return target;
+}
+
+size_t AuthUserListAclRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthUserListAclRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // string user = 1;
+  if (this->user().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->user());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthUserListAclRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthUserListAclRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthUserListAclRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthUserListAclRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthUserListAclRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthUserListAclRequest)
+    MergeFrom(*source);
+  }
+}
+
+void AuthUserListAclRequest::MergeFrom(const AuthUserListAclRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthUserListAclRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.user().size() > 0) {
+
+    user_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_);
+  }
+}
+
+void AuthUserListAclRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthUserListAclRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthUserListAclRequest::CopyFrom(const AuthUserListAclRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthUserListAclRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthUserListAclRequest::IsInitialized() const {
+  return true;
+}
+
+void AuthUserListAclRequest::Swap(AuthUserListAclRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthUserListAclRequest::InternalSwap(AuthUserListAclRequest* other) {
+  using std::swap;
+  user_.Swap(&other->user_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthUserListAclRequest::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthUserUpdateAclRequest::InitAsDefaultInstance() {
+}
+void AuthUserUpdateAclRequest::clear_acl() {
+  acl_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthUserUpdateAclRequest::kUserFieldNumber;
+const int AuthUserUpdateAclRequest::kAclFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthUserUpdateAclRequest::AuthUserUpdateAclRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthUserUpdateAclRequest.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthUserUpdateAclRequest)
+}
+AuthUserUpdateAclRequest::AuthUserUpdateAclRequest(const AuthUserUpdateAclRequest& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      acl_(from.acl_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  user_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.user().size() > 0) {
+    user_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_);
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthUserUpdateAclRequest)
+}
+
+void AuthUserUpdateAclRequest::SharedCtor() {
+  user_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+AuthUserUpdateAclRequest::~AuthUserUpdateAclRequest() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthUserUpdateAclRequest)
+  SharedDtor();
+}
+
+void AuthUserUpdateAclRequest::SharedDtor() {
+  user_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void AuthUserUpdateAclRequest::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthUserUpdateAclRequest::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthUserUpdateAclRequest& AuthUserUpdateAclRequest::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthUserUpdateAclRequest.base);
+  return *internal_default_instance();
+}
+
+
+void AuthUserUpdateAclRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthUserUpdateAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  acl_.Clear();
+  user_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _internal_metadata_.Clear();
+}
+
+bool AuthUserUpdateAclRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthUserUpdateAclRequest)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string user = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_user()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->user().data(), static_cast<int>(this->user().length()),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "etcdserverpb.AuthUserUpdateAclRequest.user"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .authpb.AclEntry acl = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_acl()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthUserUpdateAclRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthUserUpdateAclRequest)
+  return false;
+#undef DO_
+}
+
+void AuthUserUpdateAclRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthUserUpdateAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string user = 1;
+  if (this->user().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->user().data(), static_cast<int>(this->user().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthUserUpdateAclRequest.user");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->user(), output);
+  }
+
+  // repeated .authpb.AclEntry acl = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->acl_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->acl(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthUserUpdateAclRequest)
+}
+
+::google::protobuf::uint8* AuthUserUpdateAclRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthUserUpdateAclRequest)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string user = 1;
+  if (this->user().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->user().data(), static_cast<int>(this->user().length()),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "etcdserverpb.AuthUserUpdateAclRequest.user");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->user(), target);
+  }
+
+  // repeated .authpb.AclEntry acl = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->acl_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->acl(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthUserUpdateAclRequest)
+  return target;
+}
+
+size_t AuthUserUpdateAclRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthUserUpdateAclRequest)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .authpb.AclEntry acl = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->acl_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->acl(static_cast<int>(i)));
+    }
+  }
+
+  // string user = 1;
+  if (this->user().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->user());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthUserUpdateAclRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthUserUpdateAclRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthUserUpdateAclRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthUserUpdateAclRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthUserUpdateAclRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthUserUpdateAclRequest)
+    MergeFrom(*source);
+  }
+}
+
+void AuthUserUpdateAclRequest::MergeFrom(const AuthUserUpdateAclRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthUserUpdateAclRequest)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  acl_.MergeFrom(from.acl_);
+  if (from.user().size() > 0) {
+
+    user_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_);
+  }
+}
+
+void AuthUserUpdateAclRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthUserUpdateAclRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthUserUpdateAclRequest::CopyFrom(const AuthUserUpdateAclRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthUserUpdateAclRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthUserUpdateAclRequest::IsInitialized() const {
+  return true;
+}
+
+void AuthUserUpdateAclRequest::Swap(AuthUserUpdateAclRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthUserUpdateAclRequest::InternalSwap(AuthUserUpdateAclRequest* other) {
+  using std::swap;
+  CastToBase(&acl_)->InternalSwap(CastToBase(&other->acl_));
+  user_.Swap(&other->user_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthUserUpdateAclRequest::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void AuthEnableResponse::InitAsDefaultInstance() {
   ::etcdserverpb::_AuthEnableResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
       ::etcdserverpb::ResponseHeader::internal_default_instance());
@@ -27335,6 +28851,1272 @@ void AuthRoleRevokePermissionResponse::InternalSwap(AuthRoleRevokePermissionResp
 }
 
 
+// ===================================================================
+
+void AuthPrototypeUpdateResponse::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthPrototypeUpdateResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
+      ::etcdserverpb::ResponseHeader::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthPrototypeUpdateResponse::kHeaderFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeUpdateResponse::AuthPrototypeUpdateResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeUpdateResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeUpdateResponse)
+}
+AuthPrototypeUpdateResponse::AuthPrototypeUpdateResponse(const AuthPrototypeUpdateResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_header()) {
+    header_ = new ::etcdserverpb::ResponseHeader(*from.header_);
+  } else {
+    header_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeUpdateResponse)
+}
+
+void AuthPrototypeUpdateResponse::SharedCtor() {
+  header_ = NULL;
+}
+
+AuthPrototypeUpdateResponse::~AuthPrototypeUpdateResponse() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeUpdateResponse)
+  SharedDtor();
+}
+
+void AuthPrototypeUpdateResponse::SharedDtor() {
+  if (this != internal_default_instance()) delete header_;
+}
+
+void AuthPrototypeUpdateResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeUpdateResponse::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeUpdateResponse& AuthPrototypeUpdateResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeUpdateResponse.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeUpdateResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeUpdateResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .etcdserverpb.ResponseHeader header = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_header()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeUpdateResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeUpdateResponse)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeUpdateResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_header(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeUpdateResponse)
+}
+
+::google::protobuf::uint8* AuthPrototypeUpdateResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_header(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeUpdateResponse)
+  return target;
+}
+
+size_t AuthPrototypeUpdateResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *header_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeUpdateResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeUpdateResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeUpdateResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeUpdateResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeUpdateResponse)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeUpdateResponse::MergeFrom(const AuthPrototypeUpdateResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_header()) {
+    mutable_header()->::etcdserverpb::ResponseHeader::MergeFrom(from.header());
+  }
+}
+
+void AuthPrototypeUpdateResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeUpdateResponse::CopyFrom(const AuthPrototypeUpdateResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeUpdateResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeUpdateResponse::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeUpdateResponse::Swap(AuthPrototypeUpdateResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeUpdateResponse::InternalSwap(AuthPrototypeUpdateResponse* other) {
+  using std::swap;
+  swap(header_, other->header_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeUpdateResponse::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthPrototypeDeleteResponse::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthPrototypeDeleteResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
+      ::etcdserverpb::ResponseHeader::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthPrototypeDeleteResponse::kHeaderFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeDeleteResponse::AuthPrototypeDeleteResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeDeleteResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeDeleteResponse)
+}
+AuthPrototypeDeleteResponse::AuthPrototypeDeleteResponse(const AuthPrototypeDeleteResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_header()) {
+    header_ = new ::etcdserverpb::ResponseHeader(*from.header_);
+  } else {
+    header_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeDeleteResponse)
+}
+
+void AuthPrototypeDeleteResponse::SharedCtor() {
+  header_ = NULL;
+}
+
+AuthPrototypeDeleteResponse::~AuthPrototypeDeleteResponse() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeDeleteResponse)
+  SharedDtor();
+}
+
+void AuthPrototypeDeleteResponse::SharedDtor() {
+  if (this != internal_default_instance()) delete header_;
+}
+
+void AuthPrototypeDeleteResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeDeleteResponse::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeDeleteResponse& AuthPrototypeDeleteResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeDeleteResponse.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeDeleteResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeDeleteResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .etcdserverpb.ResponseHeader header = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_header()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeDeleteResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeDeleteResponse)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeDeleteResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_header(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeDeleteResponse)
+}
+
+::google::protobuf::uint8* AuthPrototypeDeleteResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_header(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeDeleteResponse)
+  return target;
+}
+
+size_t AuthPrototypeDeleteResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *header_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeDeleteResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeDeleteResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeDeleteResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeDeleteResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeDeleteResponse)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeDeleteResponse::MergeFrom(const AuthPrototypeDeleteResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_header()) {
+    mutable_header()->::etcdserverpb::ResponseHeader::MergeFrom(from.header());
+  }
+}
+
+void AuthPrototypeDeleteResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeDeleteResponse::CopyFrom(const AuthPrototypeDeleteResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeDeleteResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeDeleteResponse::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeDeleteResponse::Swap(AuthPrototypeDeleteResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeDeleteResponse::InternalSwap(AuthPrototypeDeleteResponse* other) {
+  using std::swap;
+  swap(header_, other->header_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeDeleteResponse::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthPrototypeListResponse::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthPrototypeListResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
+      ::etcdserverpb::ResponseHeader::internal_default_instance());
+}
+void AuthPrototypeListResponse::clear_prototypes() {
+  prototypes_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthPrototypeListResponse::kHeaderFieldNumber;
+const int AuthPrototypeListResponse::kPrototypesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthPrototypeListResponse::AuthPrototypeListResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthPrototypeListResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthPrototypeListResponse)
+}
+AuthPrototypeListResponse::AuthPrototypeListResponse(const AuthPrototypeListResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      prototypes_(from.prototypes_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_header()) {
+    header_ = new ::etcdserverpb::ResponseHeader(*from.header_);
+  } else {
+    header_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthPrototypeListResponse)
+}
+
+void AuthPrototypeListResponse::SharedCtor() {
+  header_ = NULL;
+}
+
+AuthPrototypeListResponse::~AuthPrototypeListResponse() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthPrototypeListResponse)
+  SharedDtor();
+}
+
+void AuthPrototypeListResponse::SharedDtor() {
+  if (this != internal_default_instance()) delete header_;
+}
+
+void AuthPrototypeListResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthPrototypeListResponse::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthPrototypeListResponse& AuthPrototypeListResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthPrototypeListResponse.base);
+  return *internal_default_instance();
+}
+
+
+void AuthPrototypeListResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthPrototypeListResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  prototypes_.Clear();
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthPrototypeListResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthPrototypeListResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .etcdserverpb.ResponseHeader header = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_header()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .authpb.Prototype prototypes = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_prototypes()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthPrototypeListResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthPrototypeListResponse)
+  return false;
+#undef DO_
+}
+
+void AuthPrototypeListResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthPrototypeListResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_header(), output);
+  }
+
+  // repeated .authpb.Prototype prototypes = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->prototypes_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->prototypes(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthPrototypeListResponse)
+}
+
+::google::protobuf::uint8* AuthPrototypeListResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthPrototypeListResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_header(), deterministic, target);
+  }
+
+  // repeated .authpb.Prototype prototypes = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->prototypes_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->prototypes(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthPrototypeListResponse)
+  return target;
+}
+
+size_t AuthPrototypeListResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthPrototypeListResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .authpb.Prototype prototypes = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->prototypes_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->prototypes(static_cast<int>(i)));
+    }
+  }
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *header_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthPrototypeListResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthPrototypeListResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthPrototypeListResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthPrototypeListResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthPrototypeListResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthPrototypeListResponse)
+    MergeFrom(*source);
+  }
+}
+
+void AuthPrototypeListResponse::MergeFrom(const AuthPrototypeListResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthPrototypeListResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  prototypes_.MergeFrom(from.prototypes_);
+  if (from.has_header()) {
+    mutable_header()->::etcdserverpb::ResponseHeader::MergeFrom(from.header());
+  }
+}
+
+void AuthPrototypeListResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthPrototypeListResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthPrototypeListResponse::CopyFrom(const AuthPrototypeListResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthPrototypeListResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthPrototypeListResponse::IsInitialized() const {
+  return true;
+}
+
+void AuthPrototypeListResponse::Swap(AuthPrototypeListResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthPrototypeListResponse::InternalSwap(AuthPrototypeListResponse* other) {
+  using std::swap;
+  CastToBase(&prototypes_)->InternalSwap(CastToBase(&other->prototypes_));
+  swap(header_, other->header_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthPrototypeListResponse::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthUserListAclResponse::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthUserListAclResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
+      ::etcdserverpb::ResponseHeader::internal_default_instance());
+}
+void AuthUserListAclResponse::clear_acl() {
+  acl_.Clear();
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthUserListAclResponse::kHeaderFieldNumber;
+const int AuthUserListAclResponse::kAclFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthUserListAclResponse::AuthUserListAclResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthUserListAclResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthUserListAclResponse)
+}
+AuthUserListAclResponse::AuthUserListAclResponse(const AuthUserListAclResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      acl_(from.acl_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_header()) {
+    header_ = new ::etcdserverpb::ResponseHeader(*from.header_);
+  } else {
+    header_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthUserListAclResponse)
+}
+
+void AuthUserListAclResponse::SharedCtor() {
+  header_ = NULL;
+}
+
+AuthUserListAclResponse::~AuthUserListAclResponse() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthUserListAclResponse)
+  SharedDtor();
+}
+
+void AuthUserListAclResponse::SharedDtor() {
+  if (this != internal_default_instance()) delete header_;
+}
+
+void AuthUserListAclResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthUserListAclResponse::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthUserListAclResponse& AuthUserListAclResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthUserListAclResponse.base);
+  return *internal_default_instance();
+}
+
+
+void AuthUserListAclResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthUserListAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  acl_.Clear();
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthUserListAclResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthUserListAclResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .etcdserverpb.ResponseHeader header = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_header()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .authpb.AclEntry acl = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_acl()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthUserListAclResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthUserListAclResponse)
+  return false;
+#undef DO_
+}
+
+void AuthUserListAclResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthUserListAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_header(), output);
+  }
+
+  // repeated .authpb.AclEntry acl = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->acl_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2,
+      this->acl(static_cast<int>(i)),
+      output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthUserListAclResponse)
+}
+
+::google::protobuf::uint8* AuthUserListAclResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthUserListAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_header(), deterministic, target);
+  }
+
+  // repeated .authpb.AclEntry acl = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->acl_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->acl(static_cast<int>(i)), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthUserListAclResponse)
+  return target;
+}
+
+size_t AuthUserListAclResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthUserListAclResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // repeated .authpb.AclEntry acl = 2;
+  {
+    unsigned int count = static_cast<unsigned int>(this->acl_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->acl(static_cast<int>(i)));
+    }
+  }
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *header_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthUserListAclResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthUserListAclResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthUserListAclResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthUserListAclResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthUserListAclResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthUserListAclResponse)
+    MergeFrom(*source);
+  }
+}
+
+void AuthUserListAclResponse::MergeFrom(const AuthUserListAclResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthUserListAclResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  acl_.MergeFrom(from.acl_);
+  if (from.has_header()) {
+    mutable_header()->::etcdserverpb::ResponseHeader::MergeFrom(from.header());
+  }
+}
+
+void AuthUserListAclResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthUserListAclResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthUserListAclResponse::CopyFrom(const AuthUserListAclResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthUserListAclResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthUserListAclResponse::IsInitialized() const {
+  return true;
+}
+
+void AuthUserListAclResponse::Swap(AuthUserListAclResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthUserListAclResponse::InternalSwap(AuthUserListAclResponse* other) {
+  using std::swap;
+  CastToBase(&acl_)->InternalSwap(CastToBase(&other->acl_));
+  swap(header_, other->header_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthUserListAclResponse::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void AuthUserUpdateAclResponse::InitAsDefaultInstance() {
+  ::etcdserverpb::_AuthUserUpdateAclResponse_default_instance_._instance.get_mutable()->header_ = const_cast< ::etcdserverpb::ResponseHeader*>(
+      ::etcdserverpb::ResponseHeader::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AuthUserUpdateAclResponse::kHeaderFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+AuthUserUpdateAclResponse::AuthUserUpdateAclResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_rpc_2eproto::scc_info_AuthUserUpdateAclResponse.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:etcdserverpb.AuthUserUpdateAclResponse)
+}
+AuthUserUpdateAclResponse::AuthUserUpdateAclResponse(const AuthUserUpdateAclResponse& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_header()) {
+    header_ = new ::etcdserverpb::ResponseHeader(*from.header_);
+  } else {
+    header_ = NULL;
+  }
+  // @@protoc_insertion_point(copy_constructor:etcdserverpb.AuthUserUpdateAclResponse)
+}
+
+void AuthUserUpdateAclResponse::SharedCtor() {
+  header_ = NULL;
+}
+
+AuthUserUpdateAclResponse::~AuthUserUpdateAclResponse() {
+  // @@protoc_insertion_point(destructor:etcdserverpb.AuthUserUpdateAclResponse)
+  SharedDtor();
+}
+
+void AuthUserUpdateAclResponse::SharedDtor() {
+  if (this != internal_default_instance()) delete header_;
+}
+
+void AuthUserUpdateAclResponse::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* AuthUserUpdateAclResponse::descriptor() {
+  ::protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const AuthUserUpdateAclResponse& AuthUserUpdateAclResponse::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_rpc_2eproto::scc_info_AuthUserUpdateAclResponse.base);
+  return *internal_default_instance();
+}
+
+
+void AuthUserUpdateAclResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:etcdserverpb.AuthUserUpdateAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaNoVirtual() == NULL && header_ != NULL) {
+    delete header_;
+  }
+  header_ = NULL;
+  _internal_metadata_.Clear();
+}
+
+bool AuthUserUpdateAclResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:etcdserverpb.AuthUserUpdateAclResponse)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .etcdserverpb.ResponseHeader header = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_header()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:etcdserverpb.AuthUserUpdateAclResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:etcdserverpb.AuthUserUpdateAclResponse)
+  return false;
+#undef DO_
+}
+
+void AuthUserUpdateAclResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:etcdserverpb.AuthUserUpdateAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_header(), output);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+  }
+  // @@protoc_insertion_point(serialize_end:etcdserverpb.AuthUserUpdateAclResponse)
+}
+
+::google::protobuf::uint8* AuthUserUpdateAclResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:etcdserverpb.AuthUserUpdateAclResponse)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_header(), deterministic, target);
+  }
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:etcdserverpb.AuthUserUpdateAclResponse)
+  return target;
+}
+
+size_t AuthUserUpdateAclResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:etcdserverpb.AuthUserUpdateAclResponse)
+  size_t total_size = 0;
+
+  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+  }
+  // .etcdserverpb.ResponseHeader header = 1;
+  if (this->has_header()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *header_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void AuthUserUpdateAclResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:etcdserverpb.AuthUserUpdateAclResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  const AuthUserUpdateAclResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const AuthUserUpdateAclResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:etcdserverpb.AuthUserUpdateAclResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:etcdserverpb.AuthUserUpdateAclResponse)
+    MergeFrom(*source);
+  }
+}
+
+void AuthUserUpdateAclResponse::MergeFrom(const AuthUserUpdateAclResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:etcdserverpb.AuthUserUpdateAclResponse)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_header()) {
+    mutable_header()->::etcdserverpb::ResponseHeader::MergeFrom(from.header());
+  }
+}
+
+void AuthUserUpdateAclResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:etcdserverpb.AuthUserUpdateAclResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void AuthUserUpdateAclResponse::CopyFrom(const AuthUserUpdateAclResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:etcdserverpb.AuthUserUpdateAclResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool AuthUserUpdateAclResponse::IsInitialized() const {
+  return true;
+}
+
+void AuthUserUpdateAclResponse::Swap(AuthUserUpdateAclResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void AuthUserUpdateAclResponse::InternalSwap(AuthUserUpdateAclResponse* other) {
+  using std::swap;
+  swap(header_, other->header_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata AuthUserUpdateAclResponse::GetMetadata() const {
+  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace etcdserverpb
 namespace google {
@@ -27546,6 +30328,21 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthRoleGrantPermi
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthRoleRevokePermissionRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthRoleRevokePermissionRequest >(Arena* arena) {
   return Arena::CreateInternal< ::etcdserverpb::AuthRoleRevokePermissionRequest >(arena);
 }
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeUpdateRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeUpdateRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeUpdateRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeDeleteRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeDeleteRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeDeleteRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeListRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeListRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeListRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthUserListAclRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthUserListAclRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthUserListAclRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthUserUpdateAclRequest* Arena::CreateMaybeMessage< ::etcdserverpb::AuthUserUpdateAclRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthUserUpdateAclRequest >(arena);
+}
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthEnableResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthEnableResponse >(Arena* arena) {
   return Arena::CreateInternal< ::etcdserverpb::AuthEnableResponse >(arena);
 }
@@ -27593,6 +30390,21 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthRoleGrantPermi
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthRoleRevokePermissionResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthRoleRevokePermissionResponse >(Arena* arena) {
   return Arena::CreateInternal< ::etcdserverpb::AuthRoleRevokePermissionResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeUpdateResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeUpdateResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeUpdateResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeDeleteResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeDeleteResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeDeleteResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthPrototypeListResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthPrototypeListResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthPrototypeListResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthUserListAclResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthUserListAclResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthUserListAclResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::etcdserverpb::AuthUserUpdateAclResponse* Arena::CreateMaybeMessage< ::etcdserverpb::AuthUserUpdateAclResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::etcdserverpb::AuthUserUpdateAclResponse >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

@@ -18,6 +18,13 @@ message KeyValue {
   // When the attached lease expires, the key will be deleted.
   // If lease is 0, then no lease is attached to the key.
   int64 lease = 6;
+
+  // Index of a prototype for ACL checking. If this key is a dir, this is dir's
+  // prototype, if it's a simple value, it's a prototype of a parent dir.
+  int64 prototype_idx = 101;
+  // If this field is > 0 it specifies
+  // how many dirs with FORCE_SUBOBJECTS_FIND are there in a row above this path.
+  int32 force_find_depth = 102;
 }
 
 message Event {
